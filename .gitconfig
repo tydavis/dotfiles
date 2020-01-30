@@ -1,0 +1,17 @@
+[user]
+        name = Tyler Davis
+        email = tydavis@gmail.com
+[push]
+        default = simple
+[core]
+        editor = vim
+[credential]
+        helper = store --file=/home/tydavis/.config/gitcreds
+[credential "https://gitlab.nordstrom.com"]
+    username = cm0l
+[http]
+	cookiefile = /home/tydavis/.gitcookies
+[protocol]
+	version = 2
+[fetch]
+	writeCommitGraph = true
