@@ -31,6 +31,12 @@ export GO111MODULE=on
 
 export PATH=$PATH:$HOME/.cargo/bin:/usr/local/go/bin:/home/tydavis/go/bin:/home/tydavis/.bin
 
+# To load files
+# git clone https://gitlab.nordstrom.com/DavisTylerM/dotfiles.git $HOME/.dotfiles
+
+#shorten the git dotfiles management
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 export MANPAGER="sh -c 'col -b | bat -l man -p'"
 alias less='less -FRX'
 alias rg='rg -p'
