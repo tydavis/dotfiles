@@ -49,7 +49,7 @@ case "$OSTYPE" in
     if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
     export MANPAGER="sh -c 'col -b | bat -l man -p'"
-    `eval /home/tydavis/.bin/pathuniq`
+    `eval $HOME/go/bin/pathuniq`
   ;;
   linux*)
     # == Archlinux (?) settings
@@ -61,8 +61,7 @@ case "$OSTYPE" in
     
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
-    
-    `eval $HOME/go/bin/pathuniq`
+    `eval /home/tydavis/.bin/pathuniq`
   ;;
   dragonfly*|freebsd*|netbsd*|openbsd*)
     # No BSD yet
