@@ -22,35 +22,50 @@ bindkey -v
 export KEYTIMEOUT=1
 ###
 
+# == Universal Configs ==
 export EDITOR="vim"
 export VISUAL="vim"
-
-### GOLANG
-export GOPATH=/home/tydavis/go
 export GO111MODULE=on
+export BAT_THEME="Monokai Extended Light"
 
-export PATH=$PATH:$HOME/.cargo/bin:/usr/local/go/bin:/home/tydavis/go/bin:/home/tydavis/.bin
+alias less='less -FRX'
+alias ls='/bin/ls -F'
+alias rg='rg -p'
 
 # To load files
-# git clone https://gitlab.nordstrom.com/DavisTylerM/dotfiles.git $HOME/.dotfiles
+# git clone --bare https://github.com/tydavis/dotfiles.git $HOME/.dotfiles
 
 #shorten the git dotfiles management
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-export MANPAGER="sh -c 'col -b | bat -l man -p'"
-alias less='less -FRX'
-alias rg='rg -p'
-alias psc='ps xawf -eo pid,user,cgroup,args'
-alias ls='/bin/ls -F'
-
-if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
-
-## for d in `find ~/go/src -name ".git"|grep -E -v "cargo|pkg|npm|testdata|vendor"`; do cd $d/..; echo `pwd`:; git pull; done
-# fd -H -t d -E mod '.git$' ~/ -x git -C {//} pull;
-
-`eval /home/tydavis/.bin/pathuniq`
-
 export PS1="%m [%n:%c]%# "
 
-export BAT_THEME="Monokai Extended Light"
+# for ZSH
+case "$OSTYPE" in
+  darwin*)
+    # == OSX Settings ==
+    export PATH=/usr/local/bin:$PATH:$HOME/.bin:/usr/local/opt/openjdk/bin:/usr/local/go/bin:/Users/tydavis/go/bin
+    export AWS_SDK_LOAD_CONFIG=1
+    if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
+    if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
+    export MANPAGER="sh -c 'col -b | bat -l man -p'"
+    `eval /home/tydavis/.bin/pathuniq`
+  ;;
+  linux*)
+    # == Archlinux (?) settings
+    export MANPAGER="sh -c 'col -b | bat -l man -p'"
+    alias psc='ps xawf -eo pid,user,cgroup,args'
+    
+    export GOPATH=/home/tydavis/go
+    export PATH=$PATH:$HOME/.cargo/bin:/usr/local/go/bin:/home/tydavis/go/bin:/home/tydavis/.bin
+    
+    if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
+    if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
+    
+    `eval $HOME/go/bin/pathuniq`
+  ;;
+  dragonfly*|freebsd*|netbsd*|openbsd*)
+    # No BSD yet
+  ;;
+esac
+
