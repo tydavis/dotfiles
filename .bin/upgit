@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+# Make sure to always start in $HOME
+cd $HOME;
+
+# Always remove the existing file so we let git compare
+[ -e ~/.setup/gitlist ] && rm ~/.setup/gitlist
+touch ~/.setup/gitlist
+
+# Iterate through all code folders and produce a CSV of
+# folder,remote=URL,remote2=URL
+# and so on
+for p in $(fd -H -t d '.git$' code); do
+  cd $p/..
+  echo -n ${p%.git} >> ~/.setup/gitlist
+  for r in $(git remote); do
+    # get remote URL
+    echo -n ,$r=$(git config --get remote.$r.url) >> ~/.setup/gitlist
+  done
+  echo "" >> ~/.setup/gitlist
+  cd $HOME
+done
+
