@@ -5,7 +5,6 @@ code/gobundledhttp/,origin=https://github.com/tydavis/gobundledhttp.git
 code/jon/PDD/,origin=https://github.com/MightyThor/PDD.git
 code/jon/PDD-Specs/,origin=https://github.com/MightyThor/PDD-Specs.git
 code/journal/,origin=https://github.com/tydavis/journal.git
-code/learnrust/
 code/lightningwavestories/,origin=https://github.com/tydavis/lightningwavestories.git
 code/mkcert/,origin=https://github.com/tydavis/mkcert.git
 code/packt-learn-cpp/,origin=https://github.com/tydavis/packt-learn-cpp.git
