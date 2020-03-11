@@ -5,6 +5,7 @@
         default = simple
 [core]
         editor = vim
+        excludesfile = /Users/cm0l/.gitignore_global
 [credential]
         helper = store --file=/home/tydavis/.config/gitcreds
 [credential "https://gitlab.nordstrom.com"]
@@ -14,4 +15,12 @@
 [protocol]
 	version = 2
 [fetch]
-	writeCommitGraph = true
+      parallel = 4
+      writeCommitGraph = true
+[status]
+      submodulesummary = 1
+[pull]
+      ff = only
+[url "https://gitlab.nordstrom.com/"]
+        insteadOf = git@gitlab.nordstrom.com:
+
