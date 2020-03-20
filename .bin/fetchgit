@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+git fetch --all --prune;
+
+if git config remote.upstream.url > /dev/null; then
+  git pull --ff-only upstream master;
+  git push origin;
+else
+  git pull --ff-only origin master;
+fi
+
