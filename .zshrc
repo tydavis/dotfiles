@@ -32,11 +32,16 @@ alias less='less -FRX'
 alias ls='/bin/ls -F'
 alias rg='rg -p'
 
+# Using nvim again
+alias vim='nvim'
+
 # To load files
 # git clone --bare https://github.com/tydavis/dotfiles.git $HOME/.dotfiles
 
 #shorten the git dotfiles management
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# Ignore files that aren't relevant
+# dotfiles config --local status.showUntrackedFiles no
 
 export PS1="%m [%n:%c]%# "
 
