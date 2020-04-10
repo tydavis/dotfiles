@@ -23,10 +23,10 @@ export KEYTIMEOUT=1
 ###
 
 # == Universal Configs ==
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export GO111MODULE=on
-export BAT_THEME="Monokai Extended Light"
+export BAT_THEME="Monokai Extended"
 
 alias less='less -FRX'
 alias ls='/bin/ls -F'

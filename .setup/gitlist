@@ -13,10 +13,6 @@ code/pathuniq-rs/,origin=https://github.com/tydavis/pathuniq-rs.git
 code/pfx2pem/,origin=https://github.com/tydavis/pfx2pem.git
 code/resume/,origin=https://github.com/tydavis/resume.git
 code/sneaker/,origin=https://github.com/tydavis/sneaker.git,upstream=https://github.com/codahale/sneaker.git
-code/sntl/git/,origin=https://github.com/git/git.git
-code/sntl/git/contrib/hg-to-git,origin=https://github.com/git/git.git
-code/sntl/git/contrib/mw-to-git,origin=https://github.com/git/git.git
-code/sntl/git/gitk-git,origin=https://github.com/git/git.git
 code/updatedns/,origin=https://github.com/tydavis/updatedns.git
 code/work/SecurityStandardsV1/,origin=https://gitlab.nordstrom.com/SecurityStandards/SecurityStandardsV1.git
 code/work/aws-okta/,origin=https://gitlab.nordstrom.com/DavisTylerM/aws-okta.git,upstream=https://gitlab.nordstrom.com/public-cloud/aws-okta.git
