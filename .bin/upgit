@@ -7,17 +7,23 @@ cd $HOME;
 [ -e ~/.setup/gitlist ] && rm ~/.setup/gitlist
 touch ~/.setup/gitlist
 
+gitTmp=$(mktemp /tmp/gitlist.XXXX)
+
 # Iterate through all code folders and produce a CSV of
 # folder,remote=URL,remote2=URL
 # and so on
 for p in $(fd -H -t d '.git$' code); do
   cd $p/..
-  echo -n ${p%.git} >> ~/.setup/gitlist
+  y=${p#code/}
+  echo -n ${y%.git} >> $gitTmp
   for r in $(git remote); do
     # get remote URL
-    echo -n ,$r=$(git config --get remote.$r.url) >> ~/.setup/gitlist
+    echo -n ,$r=$(git config --get remote.$r.url) >> $gitTmp
   done
-  echo "" >> ~/.setup/gitlist
+  echo "" >> $gitTmp
   cd $HOME
 done
+
+sort $gitTmp > ~/.setup/gitlist
+rm $gitTmp
 
