@@ -15,4 +15,9 @@ esac
 fd -H -t d -E mod -E vendor '.git$' ~/ -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
 gcloud components update -q;
 
+# Do work updates, then add to our own list
+gitrect -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist
+upgit;
+
+echo "" # Newline
 date;
