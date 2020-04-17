@@ -26,12 +26,12 @@ export KEYTIMEOUT=1
 export EDITOR="nvim"
 export VISUAL="nvim"
 export GO111MODULE=on
-export BAT_THEME="github"
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export BAT_THEME="Solarized (light)"
+#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-alias less='less -FRX'
+alias less='less -FX'
 alias ls='/bin/ls -F'
-alias rg='rg -p'
+#alias rg='rg -p'
 
 # Using nvim again
 alias vim='nvim'
