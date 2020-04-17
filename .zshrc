@@ -26,7 +26,7 @@ export KEYTIMEOUT=1
 export EDITOR="nvim"
 export VISUAL="nvim"
 export GO111MODULE=on
-export BAT_THEME="Monokai Extended"
+export BAT_THEME="Github"
 
 alias less='less -FRX'
 alias ls='/bin/ls -F'
