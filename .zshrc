@@ -26,7 +26,8 @@ export KEYTIMEOUT=1
 export EDITOR="nvim"
 export VISUAL="nvim"
 export GO111MODULE=on
-export BAT_THEME="Github"
+export BAT_THEME="github"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 alias less='less -FRX'
 alias ls='/bin/ls -F'
