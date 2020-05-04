@@ -2,11 +2,48 @@
 
 case "$OSTYPE" in
   darwin*)
+    if [[ ! -d "/usr/local/Homebrew" ]] && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
+      # Install xcode cli components
+      xcode-select --install
+      # Install brew using checked-in copy of https://raw.githubusercontent.com/Homebrew/install/master/install
+      /usr/bin/ruby -e "$(~/.setup/installbrew.sh)"
+
+      brew doctor;
+      brew update;
+
+      # Install taps here
+      brew tap git-chglog/git-chglog;
+      # Tap fonts
+      brew tap homebrew/cask-fonts
+      # Gitlab kubelogin tap
+      brew tap incubator/kubelogin https://gitlab.nordstrom.com/k8s/incubator/homebrew-kubelogin.git;
+    fi
+
+    # Install new brew packages
+    brewtemp=$(mktemp /tmp/upbrew.XXXX)
+    brew deps --installed | awk -F ':'  '{print $1}' > $brewtemp
+    comm -13 $brewtemp ~/.setup/list.brew | while read -r b; do brew install $b ; done
+    rm $brewtemp
+
+    # Install new cask packages
+    casktemp=$(mktemp /tmp/upbrewcask.XXXX)
+    brew cask list -1 > $casktemp
+    comm -13 $casktemp ~/.setup/list.brewcask | while read -r b; do brew cask install $b ; done
+    rm $casktemp
+
     brew update;
     brew upgrade;
+    brew cask upgrade;
     brew cleanup;
+
+    # Update all package lists
+    brew deps --installed | awk -F ':'  '{print $1}' > ~/.setup/list.brew
+    brew cask list -1 > ~/.setup/list.brewcask
+    # fetch the updated brew install script only if new
+    curl -fsSL -z ~/.setup/installbrew.sh --output ~/.setup/installbrew.sh https://raw.githubusercontent.com/Homebrew/install/master/install
   ;;
   linux*)
+    # == ARCHLINUX ==
     sudo pacman -Syu;
     # Dump all packages into list
     echo "base" > ~/.setup/paclist
