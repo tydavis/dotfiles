@@ -24,3 +24,5 @@
 [url "https://gitlab.nordstrom.com/"]
         insteadOf = git@gitlab.nordstrom.com:
 
+[hub]
+	protocol = https

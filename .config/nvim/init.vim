@@ -46,7 +46,7 @@ set visualbell
 
 "Code folding
 set foldmethod=syntax 
-set foldlevel=0
+set foldlevel=1
 set foldnestmax=1 
 
 filetype plugin on

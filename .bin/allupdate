@@ -7,15 +7,22 @@ case "$OSTYPE" in
     brew cleanup;
   ;;
   linux*)
-    sudo pacman -Syu; 
+    sudo pacman -Syu;
+    # Dump all packages into list
+    echo "base" > ~/.setup/paclist
+    echo "base-devel" >> ~/.setup/paclist
+    pacman -Qqet | grep -v "$(pacman -Qqg base-devel)" | grep -v "$(pacman -Qqm)" >> ~/.setup/paclist
+    # AUR installed / local-installed packages
+    pacman -Qmq > ~/.setup/pacaur
   ;;
 esac
 
 # Git config for work
-fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookie-work; " ;
+fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookie-work;" ;
 
 # Update all repos
 fd -H -t d -E mod -E vendor '.git$' ~/ -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+#
 # Update Gcloud 
 gcloud components update -q;
 
