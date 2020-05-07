@@ -52,5 +52,6 @@ texlive-publishers
 texlive-science
 ufw
 usbutils
+wget
 whois
 xfsdump

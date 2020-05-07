@@ -1,5 +1,6 @@
 jon/PDD/,origin=https://github.com/MightyThor/PDD.git
 jon/PDD-Specs/,origin=https://github.com/MightyThor/PDD-Specs.git
+personal/browsh/,origin=https://github.com/tydavis/browsh.git,upstream=https://github.com/browsh-org/browsh.git
 personal/dnstracker/,origin=https://github.com/tydavis/dnstracker.git
 personal/exercism_cli/,origin=https://github.com/tydavis/exercism_cli.git,upstream=https://github.com/exercism/cli.git
 personal/gartifact/,origin=https://github.com/tydavis/gartifact.git

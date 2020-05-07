@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'rakr/vim-one'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'buoto/gotests-vim'
 Plug 'rust-lang/rust.vim'
@@ -53,8 +54,9 @@ filetype plugin on
 syntax on
 
 "set termguicolors
-set background=light
-colorscheme peachpuff
+"set background=light
+"colorscheme peachpuff
+colorscheme one
 
 """ Statusline bits
 set statusline=
