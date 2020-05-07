@@ -6,6 +6,7 @@ personal/exercism_cli/,origin=https://github.com/tydavis/exercism_cli.git,upstre
 personal/gartifact/,origin=https://github.com/tydavis/gartifact.git
 personal/gitrect/,origin=https://github.com/tydavis/gitrect.git
 personal/gobundledhttp/,origin=https://github.com/tydavis/gobundledhttp.git
+personal/httpstat/,origin=https://github.com/tydavis/httpstat.git,upstream=https://github.com/davecheney/httpstat.git
 personal/journal/,origin=https://github.com/tydavis/journal.git
 personal/lazygit,origin=https://github.com/tydavis/lazygit.git,upstream=https://github.com/jesseduffield/lazygit.git
 personal/lightningwavestories/,origin=https://github.com/tydavis/lightningwavestories.git
