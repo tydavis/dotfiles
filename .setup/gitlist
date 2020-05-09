@@ -8,6 +8,7 @@ personal/gitrect/,origin=https://github.com/tydavis/gitrect.git
 personal/gobundledhttp/,origin=https://github.com/tydavis/gobundledhttp.git
 personal/httpstat/,origin=https://github.com/tydavis/httpstat.git,upstream=https://github.com/davecheney/httpstat.git
 personal/journal/,origin=https://github.com/tydavis/journal.git
+personal/lawsofengineering/,origin=https://github.com/tydavis/lawsofengineering.git
 personal/lazygit,origin=https://github.com/tydavis/lazygit.git,upstream=https://github.com/jesseduffield/lazygit.git
 personal/lightningwavestories/,origin=https://github.com/tydavis/lightningwavestories.git
 personal/mkcert/,origin=https://github.com/tydavis/mkcert.git
@@ -31,6 +32,7 @@ work/fortknox/fortknox-client-go/,origin=https://gitlab.nordstrom.com/DavisTyler
 work/fortknox/fortknox-grpc/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox-grpc.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox-grpc.git
 work/fortknox/fortknox/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox.git
 work/fortknox/goldfinger/,origin=https://gitlab.nordstrom.com/DavisTylerM/goldfinger.git,upstream=https://gitlab.nordstrom.com/tokenize/goldfinger.git
+work/fortknox/gomemcache/,origin=https://gitlab.nordstrom.com/tokenize/gomemcache.git,upstream=https://github.com/bradfitz/gomemcache.git
 work/fortknox/groupcache/,github=https://github.com/mailgun/groupcache.git,origin=https://gitlab.nordstrom.com/tokenize/groupcache.git
 work/fortknox/nodejs-client/,origin=https://gitlab.nordstrom.com/events/fortknox-grpc-client-node.git
 work/fortknox/redemption/,origin=https://gitlab.nordstrom.com/DavisTylerM/redemption.git,upstream=https://gitlab.nordstrom.com/tokenize/redemption.git

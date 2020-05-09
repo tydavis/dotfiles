@@ -52,6 +52,9 @@ texlive-publishers
 texlive-science
 ufw
 usbutils
+weechat
+weechat-matrix
 wget
 whois
 xfsdump
+znc
