@@ -17,6 +17,7 @@ personal/pathuniq/,origin=https://github.com/tydavis/pathuniq.git
 personal/resume/,origin=https://github.com/tydavis/resume.git
 personal/sneaker/,origin=https://github.com/tydavis/sneaker.git,upstream=https://github.com/codahale/sneaker.git
 personal/updatedns/,origin=https://github.com/tydavis/updatedns.git
+personal/utilities/,origin=https://github.com/tydavis/utilities.git
 work/aws_login_extension/,origin=https://gitlab.nordstrom.com/SRE/public/aws_login_extension.git
 work/aws-okta/,origin=https://gitlab.nordstrom.com/DavisTylerM/aws-okta.git,upstream=https://gitlab.nordstrom.com/public-cloud/aws-okta.git
 work/aws_profile_generator/,origin=https://gitlab.nordstrom.com/SRE/public/aws_profile_generator.git
@@ -59,4 +60,5 @@ work/sntl/,origin=https://gitlab.nordstrom.com/DavisTylerM/sntl.git
 work/standards/,origin=https://gitlab.nordstrom.com/DavisTylerM/standards.git,upstream=https://gitlab.nordstrom.com/engineering-standards/standards.git
 work/templates/go/,origin=https://gitlab.nordstrom.com/platform/templates/go.git
 work/testing-scenarios/,google=https://source.developers.google.com/p/fbfk4pa73gppnwiwgfiowr8zyjjbed/r/testing-scenarios,origin=https://gitlab.nordstrom.com/DavisTylerM/testing-scenarios.git,upstream=https://gitlab.nordstrom.com/SRE/public/testing-scenarios.git
+work/utils/,origin=https://gitlab.nordstrom.com/DavisTylerM/utils.git
 work/vipdns/,origin=https://gitlab.nordstrom.com/SRE/public/vipdns.git
