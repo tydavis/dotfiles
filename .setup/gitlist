@@ -3,17 +3,12 @@ jon/PDD-Specs/,origin=https://github.com/MightyThor/PDD-Specs.git
 personal/browsh/,origin=https://github.com/tydavis/browsh.git,upstream=https://github.com/browsh-org/browsh.git
 personal/dnstracker/,origin=https://github.com/tydavis/dnstracker.git
 personal/exercism_cli/,origin=https://github.com/tydavis/exercism_cli.git,upstream=https://github.com/exercism/cli.git
-personal/gartifact/,origin=https://github.com/tydavis/gartifact.git
-personal/gitrect/,origin=https://github.com/tydavis/gitrect.git
-personal/gobundledhttp/,origin=https://github.com/tydavis/gobundledhttp.git
 personal/httpstat/,origin=https://github.com/tydavis/httpstat.git,upstream=https://github.com/davecheney/httpstat.git
 personal/journal/,origin=https://github.com/tydavis/journal.git
 personal/lawsofengineering/,origin=https://github.com/tydavis/lawsofengineering.git
 personal/lazygit,origin=https://github.com/tydavis/lazygit.git,upstream=https://github.com/jesseduffield/lazygit.git
 personal/lightningwavestories/,origin=https://github.com/tydavis/lightningwavestories.git
-personal/mkcert/,origin=https://github.com/tydavis/mkcert.git
 personal/packt-learn-cpp/,origin=https://github.com/tydavis/packt-learn-cpp.git
-personal/pathuniq/,origin=https://github.com/tydavis/pathuniq.git
 personal/resume/,origin=https://github.com/tydavis/resume.git
 personal/sneaker/,origin=https://github.com/tydavis/sneaker.git,upstream=https://github.com/codahale/sneaker.git
 personal/updatedns/,origin=https://github.com/tydavis/updatedns.git
