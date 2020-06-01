@@ -29,7 +29,7 @@ work/fortknox/fortknox-grpc/,origin=https://gitlab.nordstrom.com/DavisTylerM/for
 work/fortknox/fortknox/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox.git
 work/fortknox/goldfinger/,origin=https://gitlab.nordstrom.com/DavisTylerM/goldfinger.git,upstream=https://gitlab.nordstrom.com/tokenize/goldfinger.git
 work/fortknox/gomemcache/,origin=https://gitlab.nordstrom.com/tokenize/gomemcache.git,upstream=https://github.com/bradfitz/gomemcache.git
-work/fortknox/groupcache/,github=https://github.com/mailgun/groupcache.git,origin=https://gitlab.nordstrom.com/tokenize/groupcache.git
+work/fortknox/groupcache/,github=https://github.com/mailgun/groupcache.git,origin=https://gitlab.nordstrom.com/DavisTylerM/groupcache.git,upstream=https://gitlab.nordstrom.com/tokenize/groupcache.git
 work/fortknox/nodejs-client/,origin=https://gitlab.nordstrom.com/events/fortknox-grpc-client-node.git
 work/fortknox/redemption/,origin=https://gitlab.nordstrom.com/DavisTylerM/redemption.git,upstream=https://gitlab.nordstrom.com/tokenize/redemption.git
 work/fortknox/shagenerator/,origin=https://gitlab.nordstrom.com/DavisTylerM/shagenerator.git
