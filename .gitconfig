@@ -26,3 +26,5 @@
 
 [hub]
 	protocol = https
+[init]
+    templateDir = ~/.config/git/template/
