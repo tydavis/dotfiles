@@ -23,10 +23,12 @@ work/designreview/,origin=https://gitlab.nordstrom.com/DavisTylerM/designreview.
 work/dotfiles/,origin=https://gitlab.nordstrom.com/DavisTylerM/dotfiles.git
 work/faq/,origin=https://gitlab.nordstrom.com/DavisTylerM/faq.git,upstream=https://gitlab.nordstrom.com/SRE/faq.git
 work/fortknox/client-test-k8s/,origin=https://gitlab.nordstrom.com/tokenize/fortknox-redemption-client-k8s.git
+work/fortknox/complianceui-endpoints/,Kris.Hughes=https://gitlab.nordstrom.com/Kristopher.Hughes/complianceui-endpoints.git,origin=https://gitlab.nordstrom.com/DavisTylerM/complianceui-endpoints.git,upstream=https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-endpoints.git
 work/fortknox/fkcsr/,origin=https://gitlab.nordstrom.com/tokenize/fkcsr.git
 work/fortknox/fksigner/,origin=https://gitlab.nordstrom.com/DavisTylerM/fksigner.git,upstream=https://gitlab.nordstrom.com/tokenize/fksigner.git
 work/fortknox/fortknox-lru-cache/,origin=https://gitlab.nordstrom.com/tokenize/fortknox-lru-cache.git
 work/fortknox/fortknox-platform/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox-platform.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox-platform.git
+work/fortknox/mapper/,origin=https://gitlab.nordstrom.com/DavisTylerM/mapper.git
 work/fortknox/redemption/,origin=https://gitlab.nordstrom.com/DavisTylerM/redemption.git,upstream=https://gitlab.nordstrom.com/tokenize/redemption.git
 work/fortknox/tokenizer/,KrisHughes=https://gitlab.nordstrom.com/Kristopher.Hughes/tokenizer.git,origin=https://gitlab.nordstrom.com/DavisTylerM/tokenizer.git,upstream=https://gitlab.nordstrom.com/tokenize/tokenizer.git
 work/getmds/,origin=https://gitlab.nordstrom.com/SRE/public/getmds.git

@@ -2,10 +2,25 @@
 
 git fetch --all --prune;
 
-if git config remote.upstream.url > /dev/null; then
-  git pull --ff-only upstream master;
-  git push origin;
-else
-  git pull --ff-only origin master;
+if [[ `git branch --list master` ]]; then
+  if git config remote.upstream.url > /dev/null; then
+    git pull --ff-only upstream master;
+    git push origin;
+  else
+    git pull --ff-only origin master;
+  fi
+elif [[ `git branch --list main` ]]; then
+  if git config remote.upstream.url > /dev/null; then
+    git pull --ff-only upstream main;
+    git push origin;
+  else
+    git pull --ff-only origin main;
+  fi
+else # Need more references here
+  if git config remote.upstream.url > /dev/null; then
+    git pull --ff-only upstream main;
+    git push origin;
+  else
+    git pull --ff-only origin main;
+  fi
 fi
-
