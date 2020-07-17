@@ -58,7 +58,7 @@ esac
 fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookie-work;" ;
 
 # Update all repos
-fd -H -t d -E mod -E vendor '.git$' ~/ -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+fd -H -t d -E mod -E vendor -E abspackages '.git$' ~/ -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
 #
 # Update Gcloud 
 gcloud components update -q;
