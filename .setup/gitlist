@@ -28,8 +28,8 @@ work/fortknox/fkcsr/,origin=https://gitlab.nordstrom.com/tokenize/fkcsr.git
 work/fortknox/fksigner/,origin=https://gitlab.nordstrom.com/DavisTylerM/fksigner.git,upstream=https://gitlab.nordstrom.com/tokenize/fksigner.git
 work/fortknox/fortknox-lru-cache/,origin=https://gitlab.nordstrom.com/tokenize/fortknox-lru-cache.git
 work/fortknox/fortknox-platform/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox-platform.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox-platform.git
-work/fortknox/mapper/,origin=https://gitlab.nordstrom.com/DavisTylerM/mapper.git
 work/fortknox/redemption/,origin=https://gitlab.nordstrom.com/DavisTylerM/redemption.git,upstream=https://gitlab.nordstrom.com/tokenize/redemption.git
+work/fortknox/swapper/,origin=https://gitlab.nordstrom.com/DavisTylerM/swapper.git
 work/fortknox/tokenizer/,KrisHughes=https://gitlab.nordstrom.com/Kristopher.Hughes/tokenizer.git,origin=https://gitlab.nordstrom.com/DavisTylerM/tokenizer.git,upstream=https://gitlab.nordstrom.com/tokenize/tokenizer.git
 work/getmds/,origin=https://gitlab.nordstrom.com/SRE/public/getmds.git
 work/go-aws-encryption-lib/,origin=https://gitlab.nordstrom.com/DavisTylerM/go-aws-encryption-lib.git
