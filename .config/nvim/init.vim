@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'jremmen/vim-ripgrep'
+Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'rakr/vim-one'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'buoto/gotests-vim'
@@ -149,6 +151,8 @@ set mouse-=a
 noremap <leader>n :set invnumber<CR>
 "inoremap <leader>n <C-O>:set invnumber<CR>
 
+" Enable Ripgrep formatting for vim
+let g:rg_command = 'rg --vimgrep -S'
 
 """ BEGIN CPP 
 map <C-K> :pyf /usr/share/clang/clang-format.py<cr>

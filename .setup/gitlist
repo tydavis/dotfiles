@@ -4,6 +4,7 @@ personal/browsh/,origin=https://github.com/tydavis/browsh.git,upstream=https://g
 personal/dnstracker/,origin=https://github.com/tydavis/dnstracker.git
 personal/exercism_cli/,origin=https://github.com/tydavis/exercism_cli.git,upstream=https://github.com/exercism/cli.git
 personal/gosrc/,origin=https://go.googlesource.com/go
+personal/grrs/
 personal/httpstat/,origin=https://github.com/tydavis/httpstat.git,upstream=https://github.com/davecheney/httpstat.git
 personal/journal/,origin=https://github.com/tydavis/journal.git
 personal/lawsofengineering/,origin=https://github.com/tydavis/lawsofengineering.git
@@ -30,7 +31,6 @@ work/fortknox/fortknox-lru-cache/,origin=https://gitlab.nordstrom.com/tokenize/f
 work/fortknox/fortknox-platform/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox-platform.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox-platform.git
 work/fortknox/frontend/,origin=https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-frontend.git
 work/fortknox/redemption/,origin=https://gitlab.nordstrom.com/DavisTylerM/redemption.git,upstream=https://gitlab.nordstrom.com/tokenize/redemption.git
-work/fortknox/swapper/,origin=https://gitlab.nordstrom.com/DavisTylerM/swapper.git
 work/fortknox/tokenizer/,KrisHughes=https://gitlab.nordstrom.com/Kristopher.Hughes/tokenizer.git,origin=https://gitlab.nordstrom.com/DavisTylerM/tokenizer.git,upstream=https://gitlab.nordstrom.com/tokenize/tokenizer.git
 work/getmds/,origin=https://gitlab.nordstrom.com/SRE/public/getmds.git
 work/go-aws-encryption-lib/,origin=https://gitlab.nordstrom.com/DavisTylerM/go-aws-encryption-lib.git

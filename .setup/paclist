@@ -8,6 +8,7 @@ clang
 cpanminus
 devtools
 docker-compose
+exa
 fd
 fzf
 gitlab-runner
