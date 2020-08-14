@@ -30,8 +30,10 @@ work/fortknox/fksigner/,origin=https://gitlab.nordstrom.com/DavisTylerM/fksigner
 work/fortknox/fortknox-lru-cache/,origin=https://gitlab.nordstrom.com/tokenize/fortknox-lru-cache.git
 work/fortknox/fortknox-platform/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox-platform.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox-platform.git
 work/fortknox/frontend/,origin=https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-frontend.git
+work/fortknox/raft610-connector/,origin=https://gitlab.nordstrom.com/DavisTylerM/raft610-connector.git,upstream=https://gitlab.nordstrom.com/tokenize/raft610-connector.git
 work/fortknox/redemption/,origin=https://gitlab.nordstrom.com/DavisTylerM/redemption.git,upstream=https://gitlab.nordstrom.com/tokenize/redemption.git
 work/fortknox/tokenizer/,KrisHughes=https://gitlab.nordstrom.com/Kristopher.Hughes/tokenizer.git,origin=https://gitlab.nordstrom.com/DavisTylerM/tokenizer.git,upstream=https://gitlab.nordstrom.com/tokenize/tokenizer.git
+work/fortknox/token-swapper/,origin=https://gitlab.nordstrom.com/DavisTylerM/token-swapper.git,upstream=https://gitlab.nordstrom.com/tokenize/token-swapper.git
 work/getmds/,origin=https://gitlab.nordstrom.com/SRE/public/getmds.git
 work/go-aws-encryption-lib/,origin=https://gitlab.nordstrom.com/DavisTylerM/go-aws-encryption-lib.git
 work/gonordhttp/,origin=https://gitlab.nordstrom.com/DavisTylerM/gonordhttp.git
