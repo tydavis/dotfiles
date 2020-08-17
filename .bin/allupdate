@@ -1,12 +1,14 @@
 #!/usr/bin/env zsh
 
+~/.setup/confgit.sh
+
 case "$OSTYPE" in
   darwin*)
     if [[ ! -d "/usr/local/Homebrew" ]] && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
       # Install xcode cli components
       xcode-select --install
       # Install brew using checked-in copy of https://raw.githubusercontent.com/Homebrew/install/master/install
-      /usr/bin/ruby -e "$(~/.setup/installbrew.sh)"
+      /bin/bash -c ~/.setup/installbrew.sh
 
       brew doctor;
       brew update;
@@ -40,7 +42,8 @@ case "$OSTYPE" in
     brew deps --installed | awk -F ':'  '{print $1}' > ~/.setup/list.brew
     brew cask list -1 > ~/.setup/list.brewcask
     # fetch the updated brew install script only if new
-    curl -fsSL -z ~/.setup/installbrew.sh --output ~/.setup/installbrew.sh https://raw.githubusercontent.com/Homebrew/install/master/install
+    curl -fsSL -z ~/.setup/installbrew.sh --output ~/.setup/installbrew.sh https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+    fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookie-work;" ;
   ;;
   linux*)
     # == ARCHLINUX ==
@@ -51,20 +54,20 @@ case "$OSTYPE" in
     pacman -Qqet | grep -v "$(pacman -Qqg base-devel)" | grep -v "$(pacman -Qqm)" >> ~/.setup/paclist
     # AUR installed / local-installed packages
     pacman -Qmq > ~/.setup/pacaur
+    # Git config for work
+    fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookie-work;" ;
   ;;
 esac
-
-# Git config for work
-fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookie-work;" ;
 
 # Update all repos
 fd -H -t d -E mod -E vendor -E abspackages '.git$' ~/ -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
 #
-# Update Gcloud 
+# Update Gcloud
 gcloud components update -q;
 
 # Do work updates, then add to our own list
 gitrect -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist
+gitrect;
 upgit;
 
 echo "" # Newline

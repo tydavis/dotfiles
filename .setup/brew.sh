@@ -3,17 +3,20 @@
 # == Code Below ==
 
 if [[ ! -d "/usr/local/Homebrew" ]] && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
-
     # Install xcode cli components
     xcode-select --install
     # Install brew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
     brew doctor;
     brew update;
 
     # Install taps here
     brew tap git-chglog/git-chglog;
+    # Tap fonts
+    brew tap homebrew/cask-fonts
+    # Gitlab kubelogin tap
+    brew tap incubator/kubelogin https://gitlab.nordstrom.com/k8s/incubator/homebrew-kubelogin.git;
 fi
 
 # Install new brew packages

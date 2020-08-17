@@ -1,30 +1,34 @@
 [user]
-        name = Tyler Davis
-        email = tydavis@gmail.com
+    name = Tyler Davis
+    email = tydavis@gmail.com
 [push]
-        default = simple
+    default = simple
 [core]
-        editor = vim
-        excludesfile = /Users/cm0l/.gitignore_global
+    editor = code --wait
+    excludesfile = /Users/tydavis/.gitignore_global
 [credential]
-        helper = store --file=/home/tydavis/.config/gitcreds
+	helper = osxkeychain
 [credential "https://gitlab.nordstrom.com"]
     username = cm0l
-[http]
-	cookiefile = /home/tydavis/.gitcookies
-[protocol]
-	version = 2
-[fetch]
-      parallel = 4
-      writeCommitGraph = true
-[status]
-      submodulesummary = 1
-[pull]
-      ff = only
+[credential "https://source.developers.google.com"]
+    helper = gcloud.sh
 [url "https://gitlab.nordstrom.com/"]
-        insteadOf = git@gitlab.nordstrom.com:
+    insteadOf = git@gitlab.nordstrom.com:
+[http]
+    cookiefile = /Users/tydavis/.gitcookie
 
+[protocol]
+    version = 2
+[fetch]
+    parallel = 4
+    writeCommitGraph = true
+[status]
+    submodulesummary = 1
+[pull]
+    ff = only
 [hub]
-	protocol = https
+    protocol = https
 [init]
     templateDir = ~/.config/git/template/
+[difftool]
+	cmd = "code --wait --diff  "

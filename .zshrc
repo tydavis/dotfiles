@@ -2,8 +2,42 @@
 
 # The following lines were added by compinstall
 #
-zstyle ':completion:*' completer _complete _ignored
-zstyle :compinstall filename '/home/tydavis/.zshrc'
+#zstyle ':completion:*' completer _complete _ignored
+#zstyle :compinstall filename '/Users/tydavis/.zshrc'
+
+# for ZSH
+case "$OSTYPE" in
+  darwin*)
+    # ZSH Settings
+    zstyle ':completion:*' completer _complete _ignored
+    zstyle :compinstall filename '/Users/tydavis/.zshrc'
+    # == OSX Settings ==
+    export PATH=/usr/local/bin:$PATH:$HOME/.bin:$HOME/.cargo/bin:/usr/local/opt/openjdk/bin:/usr/local/go/bin:/Users/tydavis/go/bin
+    export AWS_SDK_LOAD_CONFIG=1
+    if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
+    if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
+    export MANPAGER="sh -c 'col -b | bat -l man -p'"
+    `eval $HOME/go/bin/pathuniq`
+  ;;
+  linux*)
+    # ZSH Settings
+    zstyle ':completion:*' completer _complete _ignored
+    zstyle :compinstall filename '/home/tydavis/.zshrc'
+    # == Archlinux (?) settings
+    export MANPAGER="sh -c 'col -b | bat -l man -p'"
+    alias psc='ps xawf -eo pid,user,cgroup,args'
+    
+    export GOPATH=/home/tydavis/go
+    export PATH=$PATH:$HOME/.cargo/bin:/usr/local/go/bin:/home/tydavis/go/bin:/home/tydavis/.bin
+    
+    if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
+    if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
+    `eval /home/tydavis/.bin/pathuniq`
+  ;;
+  dragonfly*|freebsd*|netbsd*|openbsd*)
+    # No BSD yet
+  ;;
+esac
 
 autoload -Uz compinit
 compinit
@@ -27,7 +61,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export GO111MODULE=on
 export BAT_THEME="Solarized (light)"
-#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 alias less='less -FX'
 alias ls='/bin/ls -F'
@@ -46,31 +80,4 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 export PS1="%m [%n:%c]%# "
 
-# for ZSH
-case "$OSTYPE" in
-  darwin*)
-    # == OSX Settings ==
-    export PATH=/usr/local/bin:$PATH:$HOME/.bin:/usr/local/opt/openjdk/bin:/usr/local/go/bin:/Users/tydavis/go/bin
-    export AWS_SDK_LOAD_CONFIG=1
-    if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
-    if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
-    export MANPAGER="sh -c 'col -b | bat -l man -p'"
-    `eval $HOME/go/bin/pathuniq`
-  ;;
-  linux*)
-    # == Archlinux (?) settings
-    export MANPAGER="sh -c 'col -b | bat -l man -p'"
-    alias psc='ps xawf -eo pid,user,cgroup,args'
-    
-    export GOPATH=/home/tydavis/go
-    export PATH=$PATH:$HOME/.cargo/bin:/usr/local/go/bin:/home/tydavis/go/bin:/home/tydavis/.bin
-    
-    if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
-    if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
-    `eval /home/tydavis/.bin/pathuniq`
-  ;;
-  dragonfly*|freebsd*|netbsd*|openbsd*)
-    # No BSD yet
-  ;;
-esac
 
