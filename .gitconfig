@@ -1,11 +1,11 @@
 [user]
     name = Tyler Davis
-    email = tydavis@gmail.com
+	email = tydavis@gmail.com
 [push]
     default = simple
 [core]
-    editor = code --wait
-    excludesfile = /Users/tydavis/.gitignore_global
+	editor = code --wait
+	excludesfile = /Users/tydavis/.gitignore_global
 [credential]
 	helper = osxkeychain
 [credential "https://gitlab.nordstrom.com"]
@@ -15,7 +15,7 @@
 [url "https://gitlab.nordstrom.com/"]
     insteadOf = git@gitlab.nordstrom.com:
 [http]
-    cookiefile = /Users/tydavis/.gitcookie
+	cookiefile = /Users/tydavis/.gitcookie
 
 [protocol]
     version = 2
