@@ -1,5 +1,5 @@
-jon/PDD-Specs/,origin=https://github.com/MightyThor/PDD-Specs.git
 jon/PDD/,origin=https://github.com/MightyThor/PDD.git
+jon/PDD-Specs/,origin=https://github.com/MightyThor/PDD-Specs.git
 personal/browsh/,origin=https://github.com/tydavis/browsh.git,upstream=https://github.com/browsh-org/browsh.git
 personal/dnstracker/,origin=https://github.com/tydavis/dnstracker.git
 personal/exercism_cli/,origin=https://github.com/tydavis/exercism_cli.git,upstream=https://github.com/exercism/cli.git
@@ -15,7 +15,6 @@ personal/resume/,origin=https://github.com/tydavis/resume.git
 personal/sneaker/,origin=https://github.com/tydavis/sneaker.git,upstream=https://github.com/codahale/sneaker.git
 personal/updatedns/,origin=https://github.com/tydavis/updatedns.git
 personal/utilities/,origin=https://github.com/tydavis/utilities.git
-work/SecurityStandardsV1/,origin=https://gitlab.nordstrom.com/SecurityStandards/SecurityStandardsV1.git
 work/aws_login_extension/,origin=https://gitlab.nordstrom.com/SRE/public/aws_login_extension.git
 work/aws_profile_generator/,origin=https://gitlab.nordstrom.com/SRE/public/aws_profile_generator.git
 work/changeapi/,origin=https://gitlab.nordstrom.com/SRE/changeapi.git
@@ -33,8 +32,8 @@ work/fortknox/fortknox-platform/,origin=https://gitlab.nordstrom.com/DavisTylerM
 work/fortknox/frontend/,origin=https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-frontend.git
 work/fortknox/raft610-connector/,origin=https://gitlab.nordstrom.com/DavisTylerM/raft610-connector.git,upstream=https://gitlab.nordstrom.com/tokenize/raft610-connector.git
 work/fortknox/redemption/,origin=https://gitlab.nordstrom.com/DavisTylerM/redemption.git,upstream=https://gitlab.nordstrom.com/tokenize/redemption.git
-work/fortknox/token-swapper/,origin=https://gitlab.nordstrom.com/DavisTylerM/token-swapper.git,upstream=https://gitlab.nordstrom.com/tokenize/token-swapper.git
 work/fortknox/tokenizer/,KrisHughes=https://gitlab.nordstrom.com/Kristopher.Hughes/tokenizer.git,origin=https://gitlab.nordstrom.com/DavisTylerM/tokenizer.git,upstream=https://gitlab.nordstrom.com/tokenize/tokenizer.git
+work/fortknox/token-swapper/,origin=https://gitlab.nordstrom.com/DavisTylerM/token-swapper.git,upstream=https://gitlab.nordstrom.com/tokenize/token-swapper.git
 work/getmds/,origin=https://gitlab.nordstrom.com/SRE/public/getmds.git
 work/go-aws-encryption-lib/,origin=https://gitlab.nordstrom.com/DavisTylerM/go-aws-encryption-lib.git
 work/gonordhttp/,origin=https://gitlab.nordstrom.com/DavisTylerM/gonordhttp.git
@@ -50,6 +49,7 @@ work/nerds/nordnap/,origin=https://gitlab.nordstrom.com/DavisTylerM/nordnap.git
 work/new-employee-onboarding/,origin=https://gitlab.nordstrom.com/SRE/new-employee-onboarding.git
 work/pivot/,origin=https://gitlab.nordstrom.com/DavisTylerM/pivot.git
 work/schema-repository/,origin=https://gitlab.nordstrom.com/DavisTylerM/schema-repository.git,upstream=https://gitlab.nordstrom.com/events/schema-repository.git
+work/SecurityStandardsV1/,origin=https://gitlab.nordstrom.com/SecurityStandards/SecurityStandardsV1.git
 work/sntl/,origin=https://gitlab.nordstrom.com/DavisTylerM/sntl.git
 work/standards/,origin=https://gitlab.nordstrom.com/DavisTylerM/standards.git,upstream=https://gitlab.nordstrom.com/engineering-standards/standards.git
 work/templates/go/,origin=https://gitlab.nordstrom.com/platform/templates/go.git

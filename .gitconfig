@@ -4,10 +4,10 @@
 [push]
     default = simple
 [core]
-	editor = code --wait
-	excludesfile = /Users/tydavis/.gitignore_global
+	editor = nvim
+	excludesfile = /home/tydavis/.gitignore_global
 [credential]
-	helper = osxkeychain
+	helper = store --file=/home/tydavis/.config/gitcreds
 [credential "https://gitlab.nordstrom.com"]
     username = cm0l
 [credential "https://source.developers.google.com"]
@@ -15,7 +15,7 @@
 [url "https://gitlab.nordstrom.com/"]
     insteadOf = git@gitlab.nordstrom.com:
 [http]
-	cookiefile = /Users/tydavis/.gitcookie
+	cookiefile = /home/tydavis/.gitcookie
 
 [protocol]
     version = 2
@@ -31,4 +31,4 @@
 [init]
     templateDir = ~/.config/git/template/
 [difftool]
-	cmd = "code --wait --diff  "
+	cmd = nvim -d    -c 'wincmd w' -c 'wincmd J'
