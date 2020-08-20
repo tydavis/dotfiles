@@ -2,6 +2,7 @@ awscli
 bash
 bat
 cairo
+certstrap
 clang-format
 docker
 enscript
