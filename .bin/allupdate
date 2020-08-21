@@ -44,7 +44,7 @@ case "$OSTYPE" in
     # fetch the updated brew install script only if new
     curl -fsSL -z ~/.setup/installbrew.sh --output ~/.setup/installbrew.sh https://raw.githubusercontent.com/Homebrew/install/master/install.sh
     # Git config for work
-    fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookie-work;" ;
+    fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookies-work;" ;
   ;;
   linux*)
     # == ARCHLINUX ==
@@ -56,7 +56,7 @@ case "$OSTYPE" in
     # AUR installed / local-installed packages
     pacman -Qmq > ~/.setup/pacaur
     # Git config for work
-    fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookie-work;" ;
+    fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookies-work;" ;
   ;;
 esac
 
