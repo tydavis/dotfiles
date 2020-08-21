@@ -44,7 +44,7 @@ for p in $(fd -H --exclude="vendor" -t d '.git$' code); do
   cd $HOME
 done
 
-sort $gitTmp > ~/.setup/gitlist
+sort -h $gitTmp > ~/.setup/gitlist
 rm $gitTmp
 
 
