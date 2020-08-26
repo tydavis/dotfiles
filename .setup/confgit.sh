@@ -20,6 +20,15 @@ git config --global status.submodulesummary 1
 git config --global pull.ff only
 git config --global init.templateDir "~/.config/git/template/"
 
+if [ "$(command -v delta)" ]; then
+  git config --global core.pager delta
+  git config --global interactive.diffFilter "delta --color-only"
+  git config --global delta.side-by-side true
+  git config --global delta.line-numbers-left-format ""
+  git config --global delta.line-numbers-right-format "│ "
+  git config --global delta.syntax-theme "Nord"
+fi
+
 case `uname` in
   Darwin)
     # commands for OS X go here
