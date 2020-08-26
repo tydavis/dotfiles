@@ -16,6 +16,7 @@ git config --global url."https://gitlab.nordstrom.com/".insteadOf "git@gitlab.no
 git config --global fetch.parallel 4
 git config --global fetch.writeCommitGraphs true
 git config --global protocol.version 2
+git config --global http.postBuffer 524288000
 git config --global status.submodulesummary 1
 git config --global pull.ff only
 git config --global init.templateDir "~/.config/git/template/"
