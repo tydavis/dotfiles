@@ -16,7 +16,6 @@ case "$OSTYPE" in
     export AWS_SDK_LOAD_CONFIG=1
     if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
-    export MANPAGER="sh -c 'col -b | bat -l man -p'"
     `eval $HOME/go/bin/pathuniq`
   ;;
   linux*)
@@ -24,7 +23,6 @@ case "$OSTYPE" in
     zstyle ':completion:*' completer _complete _ignored
     zstyle :compinstall filename '/home/tydavis/.zshrc'
     # == Archlinux (?) settings
-    export MANPAGER="sh -c 'col -b | bat -l man -p'"
     alias psc='ps xawf -eo pid,user,cgroup,args'
     
     export GOPATH=/home/tydavis/go
@@ -60,15 +58,28 @@ export KEYTIMEOUT=1
 export EDITOR="nvim"
 export VISUAL="nvim"
 export GO111MODULE=on
-export BAT_THEME="Solarized (light)"
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 alias less='less -FX'
 alias ls='/bin/ls -F'
 #alias rg='rg -p'
-
-# Using nvim again
 alias vim='nvim'
+
+if [ "$(command -v exa)" ]; then
+    unalias -m 'll'
+    unalias -m 'l'
+    unalias -m 'la'
+    unalias -m 'ls'
+    alias ls='exa -G  --color auto -a -s type'
+    alias ll='exa -l --color always -a -s type'
+fi
+
+if [ "$(command -v bat)" ]; then
+  unalias -m 'cat'
+  alias cat='bat -pp --theme="Nord"'
+  #export BAT_THEME="Solarized (light)"
+  export BAT_THEME="Nord"
+  export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+fi
 
 # To load files
 # git clone --bare https://github.com/tydavis/dotfiles.git $HOME/.dotfiles

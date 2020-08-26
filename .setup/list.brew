@@ -6,6 +6,7 @@ certstrap
 clang-format
 docker
 enscript
+exa
 fd
 font-iosevka
 font-iosevka-slab
@@ -16,7 +17,9 @@ gd
 gdbm
 gettext
 git
+git-delta
 glib
+gnu-sed
 go
 gobject-introspection
 google-chrome
@@ -67,6 +70,7 @@ ripgrep
 rsync
 ruby
 rustup-init
+semgrep
 sqlite
 swig
 transmission
