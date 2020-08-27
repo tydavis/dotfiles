@@ -141,6 +141,9 @@ endif
 " \cd change working directory to current location of file
 map <leader>cd :cd %:p:h<CR>
 
+" Rust
+let g:rustfmt_autosave = 1
+
 " Toggle indent guides for copy/paste
 "map <silent> <F8> :IndentLinesToggle<CR>
 
