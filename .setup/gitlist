@@ -17,6 +17,7 @@ work/container-image-composer/,origin=https://gitlab.nordstrom.com/DavisTylerM/c
 work/datadog-aws-add-account/,origin=https://gitlab.nordstrom.com/SRE/private/datadog-aws-add-account.git
 work/designreview/,origin=https://gitlab.nordstrom.com/DavisTylerM/designreview.git,upstream=https://gitlab.nordstrom.com/engineering-standards/designreview.git
 work/dotfiles/,origin=https://gitlab.nordstrom.com/DavisTylerM/dotfiles.git
+work/dynamodb-local/,origin=https://gitlab.nordstrom.com/DavisTylerM/dynamodb-local.git,source=https://gitlab.nordstrom.com/nap/dynamodb-local.git,upstream=https://gitlab.nordstrom.com/tokenize/dynamodb-local.git
 work/faq/,origin=https://gitlab.nordstrom.com/DavisTylerM/faq.git,upstream=https://gitlab.nordstrom.com/SRE/faq.git
 work/fortknox/client-test-k8s/,origin=https://gitlab.nordstrom.com/tokenize/fortknox-redemption-client-k8s.git
 work/fortknox/complianceui-endpoints/,Kris.Hughes=https://gitlab.nordstrom.com/Kristopher.Hughes/complianceui-endpoints.git,origin=https://gitlab.nordstrom.com/DavisTylerM/complianceui-endpoints.git,upstream=https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-endpoints.git
