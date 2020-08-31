@@ -28,6 +28,7 @@ graphite2
 graphviz
 gts
 harfbuzz
+hub
 icu4c
 jasper
 jemalloc

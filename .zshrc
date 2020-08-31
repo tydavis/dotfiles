@@ -81,6 +81,10 @@ if [ "$(command -v bat)" ]; then
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 
+if [ "$(command -v hub)" ]; then
+    eval "$(hub alias -s)"
+fi
+
 # To load files
 # git clone --bare https://github.com/tydavis/dotfiles.git $HOME/.dotfiles
 
