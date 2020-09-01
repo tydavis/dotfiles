@@ -67,6 +67,7 @@ popt
 protobuf
 protoc-gen-go
 python@3.8
+re2c
 readline
 ripgrep
 rsync
