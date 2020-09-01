@@ -49,8 +49,8 @@ if [ "$(command -v sordid)" ]; then
     mv $gitTmp ~/.setup/gitlist
 else 
     sort -h $gitTmp > ~/.setup/gitlist
+    rm $gitTmp
 fi 
 
-rm $gitTmp
 
 
