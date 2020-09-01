@@ -12,6 +12,7 @@ docker-compose
 exa
 fd
 fzf
+github-cli
 gitlab-runner
 go
 gradle

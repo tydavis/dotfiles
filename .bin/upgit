@@ -44,7 +44,13 @@ for p in $(fd -H --exclude="vendor" -t d '.git$' code); do
   cd $HOME
 done
 
-sort -h $gitTmp > ~/.setup/gitlist
+if [ "$(command -v sordid)" ]; then 
+    sordid $gitTmp
+    mv $gitTmp ~/.setup/gitlist
+else 
+    sort -h $gitTmp > ~/.setup/gitlist
+fi 
+
 rm $gitTmp
 
 

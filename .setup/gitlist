@@ -30,6 +30,7 @@ work/fortknox/client-test-k8s/,origin=https://gitlab.nordstrom.com/tokenize/fort
 work/fortknox/complianceui-endpoints/,Kris.Hughes=https://gitlab.nordstrom.com/Kristopher.Hughes/complianceui-endpoints.git,origin=https://gitlab.nordstrom.com/DavisTylerM/complianceui-endpoints.git,upstream=https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-endpoints.git
 work/fortknox/fkcsr/,origin=https://gitlab.nordstrom.com/tokenize/fkcsr.git
 work/fortknox/fksigner/,origin=https://gitlab.nordstrom.com/DavisTylerM/fksigner.git,upstream=https://gitlab.nordstrom.com/tokenize/fksigner.git
+work/fortknox/fortknox-db-utility/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox-db-utility.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox-db-utility.git
 work/fortknox/fortknox-lru-cache/,origin=https://gitlab.nordstrom.com/tokenize/fortknox-lru-cache.git
 work/fortknox/fortknox-platform/,origin=https://gitlab.nordstrom.com/DavisTylerM/fortknox-platform.git,upstream=https://gitlab.nordstrom.com/tokenize/fortknox-platform.git
 work/fortknox/frontend/,origin=https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-frontend.git
