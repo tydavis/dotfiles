@@ -16,6 +16,13 @@ elif [[ `git branch --list main` ]]; then
   else
     git pull --ff-only origin main;
   fi
+elif [[ `git branch --list trunk` ]]; then
+  if git config remote.upstream.url > /dev/null; then
+    git pull --ff-only upstream trunk;
+    git push origin;
+  else
+    git pull --ff-only origin trunk;
+  fi
 else # Need more references here
   if git config remote.upstream.url > /dev/null; then
     git pull --ff-only upstream main;
