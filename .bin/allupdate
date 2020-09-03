@@ -62,7 +62,8 @@ esac
 
 if [ "$(command -v fetchgit)" ]; then
   # Update all existing repos
-  fd -H -t d -E mod -E vendor -E abspackages '.git$' ~/ -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+  fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+  fd -H -t d '.git$' ~/.vim -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
 fi
 
 if [ "$(command -v gcloud )" ]; then
