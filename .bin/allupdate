@@ -60,17 +60,23 @@ case "$OSTYPE" in
   ;;
 esac
 
-# Update all existing repos
-fd -H -t d -E mod -E vendor -E abspackages '.git$' ~/ -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+if [ "$(command -v fetchgit)" ]; then
+  # Update all existing repos
+  fd -H -t d -E mod -E vendor -E abspackages '.git$' ~/ -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+fi
 
-# Update Gcloud
-gcloud components update -q;
+if [ "$(command -v gcloud )" ]; then
+  # Update Gcloud
+  gcloud components update -q;
+fi
 
-# Synchronize work repo updates
-gitrect -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist
-gitrect;
-# Update our list of git repos
-upgit;
+if [ "$(command -v gitrect)" ]; then
+  # Synchronize work repo updates
+  gitrect -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist
+  gitrect;
+  # Update our list of git repos
+  gitrect -u;
+fi 
 
 echo "" # Newline
 date;
