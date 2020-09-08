@@ -85,6 +85,10 @@ if [ "$(command -v hub)" ]; then
     eval "$(hub alias -s)"
 fi
 
+if [ "$(command -v zstd)" ]; then
+    alias zstd='zstd -T0'
+fi
+
 # To load files
 # git clone --bare https://github.com/tydavis/dotfiles.git $HOME/.dotfiles
 
