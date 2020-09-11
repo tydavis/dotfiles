@@ -255,6 +255,12 @@
       }
     },
     {
+      "path": "work/fortknox/token-swapper-client-go/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/tokenize/clients/token-swapper-client-go.git"
+      }
+    },
+    {
       "path": "work/fortknox/tokenizer/",
       "remotes": {
         "KrisHughes": "https://gitlab.nordstrom.com/Kristopher.Hughes/tokenizer.git",

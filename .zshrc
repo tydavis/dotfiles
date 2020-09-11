@@ -89,6 +89,12 @@ if [ "$(command -v zstd)" ]; then
     alias zstd='zstd -T0'
 fi
 
+if [ "$(command -v fd)" ]; then
+    alias upcode="fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c \"cd {//}; ~/.bin/fetchgit;\""
+else
+    alias upcode="find ~/code -name \".git\" |xargs -n1 -I{} bash -c ' cd {}/..; ~/.bin/fetchgit; ' "
+fi
+
 # To load files
 # git clone --bare https://github.com/tydavis/dotfiles.git $HOME/.dotfiles
 
