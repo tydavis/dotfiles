@@ -1,0 +1,10 @@
+[Unit]
+ Description=Automatic Update when booted up after 3 minutes, then check the system for updates every 15 minutes
+
+[Timer]
+ OnBootSec=3min
+ OnUnitActiveSec=15min
+ Unit=autofetch.service
+
+[Install]
+ WantedBy=multi-user.target
