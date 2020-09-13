@@ -197,7 +197,8 @@
     {
       "path": "work/fortknox/fkcsr/",
       "remotes": {
-        "origin": "https://gitlab.nordstrom.com/tokenize/fkcsr.git"
+        "origin": "https://gitlab.nordstrom.com/tokenize/fkcsr.git",
+        "upstream": "https://gitlab.nordstrom.com/tokenize/fkcsr.git"
       }
     },
     {

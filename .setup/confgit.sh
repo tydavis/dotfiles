@@ -20,6 +20,7 @@ git config --global http.postBuffer 524288000
 git config --global status.submodulesummary 1
 git config --global pull.ff only
 git config --global init.templateDir "~/.config/git/template/"
+git config --global hub.protocol https
 
 if [ "$(command -v delta)" ]; then
   git config --global core.pager delta
