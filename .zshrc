@@ -16,6 +16,11 @@ case "$OSTYPE" in
     export AWS_SDK_LOAD_CONFIG=1
     if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
+    # iTerm integration
+    test -e /Users/tydavis/.iterm2_shell_integration.zsh && source /Users/tydavis/.iterm2_shell_integration.zsh || true
+    # Unlock Keychain
+    alias unlock='security unlock-keychain ~/Library/Keychains/login.keychain'
+    #
     `eval $HOME/go/bin/pathuniq`
   ;;
   linux*)
@@ -64,6 +69,7 @@ alias ls='/bin/ls -F'
 #alias rg='rg -p'
 alias vim='nvim'
 
+
 if [ "$(command -v exa)" ]; then
     unalias -m 'll'
     unalias -m 'l'
@@ -94,6 +100,7 @@ if [ "$(command -v fd)" ]; then
 else
     alias upcode="find ~/code -name \".git\" |xargs -n1 -I{} bash -c ' cd {}/..; ~/.bin/fetchgit; ' "
 fi
+
 
 # To load files
 # git clone --bare https://github.com/tydavis/dotfiles.git $HOME/.dotfiles

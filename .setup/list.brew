@@ -1,6 +1,7 @@
 awscli
 bash
 bat
+brotli
 cairo
 certstrap
 clang-format
@@ -35,6 +36,7 @@ icu4c
 jasper
 jemalloc
 jpeg
+libevent
 libffi
 libpng
 libtermkey
@@ -77,8 +79,10 @@ rustup-init
 semgrep
 sqlite
 swig
+tmux
 transmission
 unibilium
+utf8proc
 vim
 watch
 webp
