@@ -104,6 +104,12 @@
       }
     },
     {
+      "path": "personal/tydavis/",
+      "remotes": {
+        "origin": "https://github.com/tydavis/tydavis.git"
+      }
+    },
+    {
       "path": "personal/updatedns-curl/",
       "remotes": {
         "origin": "https://github.com/tydavis/updatedns-curl.git"
@@ -157,6 +163,13 @@
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/designreview.git",
         "upstream": "https://gitlab.nordstrom.com/engineering-standards/designreview.git"
+      }
+    },
+    {
+      "path": "work/docker-machine/",
+      "remotes": {
+        "origin": "https://gitlab.com/tydavis/docker-machine.git",
+        "upstream": "https://gitlab.com/gitlab-org/ci-cd/docker-machine.git"
       }
     },
     {
