@@ -86,6 +86,13 @@
       }
     },
     {
+      "path": "personal/img/",
+      "remotes": {
+        "origin": "https://github.com/tydavis/img.git",
+        "upstream": "https://github.com/genuinetools/img.git"
+      }
+    },
+    {
       "path": "personal/journal/",
       "remotes": {
         "origin": "https://github.com/tydavis/journal.git"
