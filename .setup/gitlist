@@ -153,6 +153,12 @@
       }
     },
     {
+      "path": "work/cicd-go-sample-application/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/CICD/sample-apps/go.git"
+      }
+    },
+    {
       "path": "work/container-image-composer/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/container-image-composer.git",
@@ -394,6 +400,30 @@
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/standards.git",
         "upstream": "https://gitlab.nordstrom.com/engineering-standards/standards.git"
+      }
+    },
+    {
+      "path": "work/store/mapi-gohealthcheck/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/omni/store-service/mapi-gohealthcheck.git"
+      }
+    },
+    {
+      "path": "work/store/mapi-gohttp/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/omni/store-service/mapi-gohttp.git"
+      }
+    },
+    {
+      "path": "work/store/mapi-gologger/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/omni/store-service/mapi-gologger.git"
+      }
+    },
+    {
+      "path": "work/store/store-api/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/omni/store-service/store-api.git"
       }
     },
     {
