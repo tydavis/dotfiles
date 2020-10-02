@@ -44,6 +44,9 @@ case "$OSTYPE" in
     curl -fsSL -z ~/.setup/installbrew.sh --output ~/.setup/installbrew.sh https://raw.githubusercontent.com/Homebrew/install/master/install.sh
     # Git config for work
     fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookies-work;" ;
+    if [ "$(command -v code)" ]; then
+        code --list-extensions > ~/.setup/code-extensions
+    fi
   ;;
   linux*)
     # == ARCHLINUX ==
@@ -59,9 +62,6 @@ case "$OSTYPE" in
   ;;
 esac
 
-if [ "$(command -v code)" ]; then
-    code --list-extensions > ~/.setup/code-extensions
-fi
 
 if [ "$(command -v fetchgit)" ]; then
   # Update all existing repos
