@@ -403,24 +403,6 @@
       }
     },
     {
-      "path": "work/store/mapi-gohealthcheck/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/omni/store-service/mapi-gohealthcheck.git"
-      }
-    },
-    {
-      "path": "work/store/mapi-gohttp/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/omni/store-service/mapi-gohttp.git"
-      }
-    },
-    {
-      "path": "work/store/mapi-gologger/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/omni/store-service/mapi-gologger.git"
-      }
-    },
-    {
       "path": "work/store/store-api/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/omni/store-service/store-api.git"
