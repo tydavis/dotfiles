@@ -59,6 +59,10 @@ case "$OSTYPE" in
   ;;
 esac
 
+if [ "$(command -v code)" ]; then
+    code --list-extensions > ~/.setup/code-extensions
+fi
+
 if [ "$(command -v fetchgit)" ]; then
   # Update all existing repos
   fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c "cd {//}; ~/.bin/fetchgit;" ;

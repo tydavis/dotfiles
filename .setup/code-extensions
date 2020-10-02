@@ -1,10 +1,12 @@
 akamud.vscode-theme-onedark
 akamud.vscode-theme-onelight
+AlanWalk.markdown-toc
+bierner.markdown-checkbox
 bungcip.better-toml
+darkriszty.markdown-table-prettify
 DavidAnson.vscode-markdownlint
 golang.go
 johnpapa.vscode-peacock
-karigari.chat
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
@@ -13,6 +15,7 @@ ms-vscode-remote.vscode-remote-extensionpack
 ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack
+shd101wyy.markdown-preview-enhanced
 taniarascia.new-moon-vscode
 tomoyukim.vscode-mermaid-editor
 tuxtina.json2yaml
