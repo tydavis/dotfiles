@@ -105,6 +105,12 @@
       }
     },
     {
+      "path": "personal/pathuniq-rs/",
+      "remotes": {
+        "origin": "https://github.com/tydavis/pathuniq-rs.git"
+      }
+    },
+    {
       "path": "personal/resume/",
       "remotes": {
         "origin": "https://github.com/tydavis/resume.git"
