@@ -36,6 +36,7 @@ icu4c
 jasper
 jemalloc
 jpeg
+kubernetes-cli
 libevent
 libffi
 libpng
