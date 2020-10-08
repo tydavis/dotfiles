@@ -369,6 +369,13 @@
       }
     },
     {
+      "path": "work/pipeline-templates/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/pipeline-templates.git",
+        "upstream": "https://gitlab.nordstrom.com/CICD/pipeline-templates.git"
+      }
+    },
+    {
       "path": "work/pivot/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/pivot.git"
