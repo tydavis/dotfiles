@@ -154,7 +154,8 @@
     {
       "path": "work/cicd-go-sample-application/",
       "remotes": {
-        "origin": "https://gitlab.nordstrom.com/CICD/sample-apps/go.git"
+        "origin": "https://gitlab.nordstrom.com/CICD/sample-apps/go.git",
+        "upstream": "https://gitlab.nordstrom.com/CICD/sample-apps/go.git"
       }
     },
     {
