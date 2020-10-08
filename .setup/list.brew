@@ -71,6 +71,7 @@ popt
 protobuf
 protoc-gen-go
 python@3.8
+python@3.9
 re2c
 readline
 ripgrep

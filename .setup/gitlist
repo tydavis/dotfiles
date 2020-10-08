@@ -73,13 +73,6 @@
       }
     },
     {
-      "path": "personal/ghcli/",
-      "remotes": {
-        "origin": "https://github.com/tydavis/cli.git",
-        "upstream": "https://github.com/cli/cli.git"
-      }
-    },
-    {
       "path": "personal/gitrect/",
       "remotes": {
         "origin": "https://github.com/tydavis/gitrect.git"
@@ -182,13 +175,6 @@
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/designreview.git",
         "upstream": "https://gitlab.nordstrom.com/engineering-standards/designreview.git"
-      }
-    },
-    {
-      "path": "work/docker-machine/",
-      "remotes": {
-        "origin": "https://gitlab.com/tydavis/docker-machine.git",
-        "upstream": "https://gitlab.com/gitlab-org/ci-cd/docker-machine.git"
       }
     },
     {
