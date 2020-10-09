@@ -21,7 +21,7 @@ case "$OSTYPE" in
     # Unlock Keychain
     alias unlock='security unlock-keychain ~/Library/Keychains/login.keychain'
     #
-    `eval $HOME/go/bin/pathuniq`
+    `eval $HOME/.bin/pathuniq-rs`
   ;;
   linux*)
     # ZSH Settings
@@ -35,7 +35,7 @@ case "$OSTYPE" in
     
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
-    `eval /home/tydavis/.bin/pathuniq`
+    `eval $HOME/.bin/pathuniq-rs`
   ;;
   dragonfly*|freebsd*|netbsd*|openbsd*)
     # No BSD yet
