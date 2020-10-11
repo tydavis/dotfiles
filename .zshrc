@@ -32,6 +32,9 @@ case "$OSTYPE" in
     
     export GOPATH=/home/tydavis/go
     export PATH=$PATH:$HOME/.cargo/bin:/usr/local/go/bin:/home/tydavis/go/bin:/home/tydavis/.bin:/home/tydavis/.local/bin
+
+    # Rust GDB problems
+    export PYTHONPATH=$PYTHONPATH:$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/etc
     
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
@@ -66,8 +69,8 @@ export GO111MODULE=on
 
 alias less='less -FX'
 alias ls='/bin/ls -F'
-#alias rg='rg -p'
 alias vim='nvim'
+alias gdb='gdb -tui'
 
 
 if [ "$(command -v exa)" ]; then

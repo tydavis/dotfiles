@@ -4,6 +4,7 @@ aria2
 base
 bat
 bazel
+checksec
 clang
 cpanminus
 devtools
@@ -43,6 +44,8 @@ nftables
 nmap
 openssl-1.0
 reiserfsprogs
+ropgadget
+ropper
 rustup
 s-nail
 speedtest-cli
