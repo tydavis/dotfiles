@@ -113,6 +113,9 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # Ignore files that aren't relevant
 # dotfiles config --local status.showUntrackedFiles no
 
+## Swagger command for go-swagger (https://goswagger.io/install.html)
+#alias swagger="docker run --rm -it -e GOPATH=$HOME/go:/go -v $HOME:$HOME -w $(pwd) quay.io/goswagger/swagger"
+
 export PS1="%m [%n:%c]%# "
 
 

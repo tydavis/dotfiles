@@ -288,6 +288,12 @@
       }
     },
     {
+      "path": "work/k8s-docs/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/k8s/docs.git"
+      }
+    },
+    {
       "path": "work/kubelogin/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/kubelogin.git"
@@ -348,6 +354,12 @@
       "path": "work/new-employee-onboarding/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/SRE/new-employee-onboarding.git"
+      }
+    },
+    {
+      "path": "work/pathuniq-rs/",
+      "remotes": {
+        "origin": "https://github.com/tydavis/pathuniq-rs.git"
       }
     },
     {
