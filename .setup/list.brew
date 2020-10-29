@@ -15,6 +15,7 @@ font-iosevka-slab
 fontconfig
 freetype
 fribidi
+fzf
 gd
 gdbm
 gettext
