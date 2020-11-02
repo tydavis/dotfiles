@@ -67,6 +67,12 @@
       }
     },
     {
+      "path": "personal/gosrc/",
+      "remotes": {
+        "origin": "https://go.googlesource.com/go"
+      }
+    },
+    {
       "path": "personal/journal/",
       "remotes": {
         "origin": "https://github.com/tydavis/journal.git"
