@@ -72,6 +72,11 @@ alias ls='/bin/ls -F'
 alias vim='nvim'
 alias gdb='gdb -tui'
 
+# FZF fixes to use fd
+export FZF_DEFAULT_COMMAND="fd . $HOME"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd -t d . $HOME"
+
 
 if [ "$(command -v exa)" ]; then
     unalias -m 'll'
