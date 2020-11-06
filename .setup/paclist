@@ -1,6 +1,7 @@
 base
 base-devel
 aria2
+aws-cli
 base
 bat
 bazel

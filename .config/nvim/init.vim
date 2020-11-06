@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'jremmen/vim-ripgrep'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'stefandtw/quickfix-reflector.vim'
 Plug 'rakr/vim-one'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
