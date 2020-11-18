@@ -19,6 +19,12 @@
       }
     },
     {
+      "path": "personal/archive/dnd-session/",
+      "remotes": {
+        "origin": "https://github.com/tydavis/dnd-session.git"
+      }
+    },
+    {
       "path": "personal/archive/dnstracker/",
       "remotes": {
         "origin": "https://github.com/tydavis/dnstracker.git"
@@ -61,9 +67,10 @@
       }
     },
     {
-      "path": "personal/dnd-session/",
+      "path": "personal/exercism-cli/",
       "remotes": {
-        "origin": "https://github.com/tydavis/dnd-session.git"
+        "origin": "https://github.com/tydavis/cli.git",
+        "upstream": "https://github.com/exercism/cli.git"
       }
     },
     {
