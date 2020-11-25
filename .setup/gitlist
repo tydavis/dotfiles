@@ -283,6 +283,13 @@
       }
     },
     {
+      "path": "work/fortknox/user-interface/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/tokenize/compliance-ui/user-interface.git",
+        "upstream": "https://gitlab.nordstrom.com/tokenize/compliance-ui/user-interface.git"
+      }
+    },
+    {
       "path": "work/getmds/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/SRE/public/getmds.git"
