@@ -1,6 +1,12 @@
 #!/bin/bash
 set -u
 
+# Check if script is run non-interactively (e.g. CI)
+# If it is run non-interactively we should not prompt for passwords.
+if [[ ! -t 0 || -n "${CI-}" ]]; then
+  NONINTERACTIVE=1
+fi
+
 # First check if the OS is Linux.
 if [[ "$(uname)" = "Linux" ]]; then
   HOMEBREW_ON_LINUX=1
@@ -64,6 +70,8 @@ have_sudo_access() {
   local -a args
   if [[ -n "${SUDO_ASKPASS-}" ]]; then
     args=("-A")
+  elif [[ -n "${NONINTERACTIVE-}" ]]; then
+    args=("-n")
   fi
 
   if [[ -z "${HAVE_SUDO_ACCESS-}" ]]; then
@@ -72,7 +80,7 @@ have_sudo_access() {
     else
       SUDO="/usr/bin/sudo"
     fi
-    if [[ -z "${HOMEBREW_ON_LINUX-}" ]]; then
+    if [[ -n "${NONINTERACTIVE-}" ]]; then
       ${SUDO} -l mkdir &>/dev/null
     else
       ${SUDO} -v && ${SUDO} -l mkdir &>/dev/null
@@ -290,7 +298,10 @@ fi
 if [[ -z "${HOMEBREW_ON_LINUX-}" ]]; then
  have_sudo_access
 else
-  if [[ -n "${CI-}" ]] || [[ -w "$HOMEBREW_PREFIX_DEFAULT" ]] || [[ -w "/home/linuxbrew" ]] || [[ -w "/home" ]]; then
+  if [[ -n "${NONINTERACTIVE-}" ]] ||
+     [[ -w "$HOMEBREW_PREFIX_DEFAULT" ]] ||
+     [[ -w "/home/linuxbrew" ]] ||
+     [[ -w "/home" ]]; then
     HOMEBREW_PREFIX="$HOMEBREW_PREFIX_DEFAULT"
   else
     trap exit SIGINT
@@ -471,7 +482,7 @@ if should_install_command_line_tools; then
   ohai "The Xcode Command Line Tools will be installed."
 fi
 
-if [[ -t 0 && -z "${CI-}" ]]; then
+if [[ -z "${NONINTERACTIVE-}" ]]; then
   wait_for_user
 fi
 
