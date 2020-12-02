@@ -59,28 +59,25 @@ case "$OSTYPE" in
     pacman -Qmq > ~/.setup/pacaur
     # Git config for work
     fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookies-work;" ;
+    if [ "$(command -v fetchgit)" ]; then
+      # Update all existing repos
+      fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+      fd -H -t d '.git$' ~/.vim -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+    fi
+    if [ "$(command -v gitrect)" ]; then
+      # Synchronize work repo updates
+      gitrect -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist
+      gitrect;
+      # Update our list of git repos
+      gitrect -u;
+    fi 
   ;;
 esac
-
-
-if [ "$(command -v fetchgit)" ]; then
-  # Update all existing repos
-  fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
-  fd -H -t d '.git$' ~/.vim -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
-fi
 
 if [ "$(command -v gcloud )" ]; then
   # Update Gcloud
   gcloud components update -q;
 fi
-
-if [ "$(command -v gitrect)" ]; then
-  # Synchronize work repo updates
-  gitrect -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist
-  gitrect;
-  # Update our list of git repos
-  gitrect -u;
-fi 
 
 echo "" # Newline
 date;
