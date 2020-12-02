@@ -29,12 +29,19 @@ case "$OSTYPE" in
     zstyle :compinstall filename '/home/tydavis/.zshrc'
     # == Archlinux (?) settings
     alias psc='ps xawf -eo pid,user,cgroup,args'
-    
+    alias vim='nvim'
+    alias gdb='gdb -tui'
+        
     export GOPATH=/home/tydavis/go
     export PATH=$PATH:$HOME/.cargo/bin:/usr/local/go/bin:/home/tydavis/go/bin:/home/tydavis/.bin:/home/tydavis/.local/bin
 
     # Rust GDB problems
     export PYTHONPATH=$PYTHONPATH:$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/etc
+
+    if [ "$(command -v hub)" ]; then
+        eval "$(hub alias -s)"
+    fi
+
     
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
@@ -69,13 +76,7 @@ export GO111MODULE=on
 
 alias less='less -FX'
 alias ls='/bin/ls -F'
-alias vim='nvim'
-alias gdb='gdb -tui'
 
-# FZF fixes to use fd
-export FZF_DEFAULT_COMMAND="fd . $HOME"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
 
 if [ "$(command -v exa)" ]; then
@@ -95,16 +96,16 @@ if [ "$(command -v bat)" ]; then
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 
-if [ "$(command -v hub)" ]; then
-    eval "$(hub alias -s)"
-fi
-
 if [ "$(command -v zstd)" ]; then
     alias zstd='zstd -T0'
 fi
 
 if [ "$(command -v fd)" ]; then
     alias upcode="fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c \"cd {//}; ~/.bin/fetchgit;\""
+    # FZF fixes to use fd
+    export FZF_DEFAULT_COMMAND="fd . $HOME"
+    export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+    export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 else
     alias upcode="find ~/code -name \".git\" |xargs -n1 -I{} bash -c ' cd {}/..; ~/.bin/fetchgit; ' "
 fi

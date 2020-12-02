@@ -1,8 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'rust-lang/rust.vim'
-Plug 'w0rp/ale'
+Plug 'jremmen/vim-ripgrep'
+Plug 'junegunn/fzf', 
+Plug 'stefandtw/quickfix-reflector.vim'
 
 call plug#end()
 
