@@ -194,88 +194,48 @@
       }
     },
     {
-      "path": "work/fortknox/client-test-k8s/",
+      "path": "work/fortknox/fk/client-test-k8s/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/tokenize/fortknox-redemption-client-k8s.git"
       }
     },
     {
-      "path": "work/fortknox/complianceui-endpoints/",
-      "remotes": {
-        "Kris.Hughes": "https://gitlab.nordstrom.com/Kristopher.Hughes/complianceui-endpoints.git",
-        "origin": "https://gitlab.nordstrom.com/DavisTylerM/complianceui-endpoints.git",
-        "upstream": "https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-endpoints.git"
-      }
-    },
-    {
-      "path": "work/fortknox/fkcsr/",
+      "path": "work/fortknox/fk/fkcsr/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/tokenize/fkcsr.git",
         "upstream": "https://gitlab.nordstrom.com/tokenize/fkcsr.git"
       }
     },
     {
-      "path": "work/fortknox/fksigner/",
+      "path": "work/fortknox/fk/fksigner/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/fksigner.git",
         "upstream": "https://gitlab.nordstrom.com/tokenize/fksigner.git"
       }
     },
     {
-      "path": "work/fortknox/fortknox-db-utility/",
+      "path": "work/fortknox/fk/fortknox-db-utility/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/fortknox-db-utility.git",
         "upstream": "https://gitlab.nordstrom.com/tokenize/fortknox-db-utility.git"
       }
     },
     {
-      "path": "work/fortknox/fortknox-lru-cache/",
+      "path": "work/fortknox/fk/manager/",
       "remotes": {
-        "origin": "https://gitlab.nordstrom.com/tokenize/fortknox-lru-cache.git"
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/fortknox.git",
+        "upstream": "https://gitlab.nordstrom.com/tokenize/tokenmanager/fortknox.git"
       }
     },
     {
-      "path": "work/fortknox/fortknox-platform/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/DavisTylerM/fortknox-platform.git",
-        "upstream": "https://gitlab.nordstrom.com/tokenize/fortknox-platform.git"
-      }
-    },
-    {
-      "path": "work/fortknox/frontend/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/tokenize/compliance-ui/complianceui-frontend.git"
-      }
-    },
-    {
-      "path": "work/fortknox/raft610-connector/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/DavisTylerM/raft610-connector.git",
-        "upstream": "https://gitlab.nordstrom.com/tokenize/raft610-connector.git"
-      }
-    },
-    {
-      "path": "work/fortknox/redemption/",
+      "path": "work/fortknox/fk/redemption/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/redemption.git",
         "upstream": "https://gitlab.nordstrom.com/tokenize/redemption.git"
       }
     },
     {
-      "path": "work/fortknox/token-swapper/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/DavisTylerM/token-swapper.git",
-        "upstream": "https://gitlab.nordstrom.com/tokenize/token-swapper.git"
-      }
-    },
-    {
-      "path": "work/fortknox/token-swapper-client-go/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/tokenize/clients/token-swapper-client-go.git"
-      }
-    },
-    {
-      "path": "work/fortknox/tokenizer/",
+      "path": "work/fortknox/fk/tokenizer/",
       "remotes": {
         "KrisHughes": "https://gitlab.nordstrom.com/Kristopher.Hughes/tokenizer.git",
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/tokenizer.git",
@@ -283,10 +243,30 @@
       }
     },
     {
-      "path": "work/fortknox/user-interface/",
+      "path": "work/fortknox/pci/raft610-connector/",
       "remotes": {
-        "origin": "https://gitlab.nordstrom.com/tokenize/compliance-ui/user-interface.git",
-        "upstream": "https://gitlab.nordstrom.com/tokenize/compliance-ui/user-interface.git"
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/raft610-connector.git",
+        "upstream": "https://gitlab.nordstrom.com/tokenize/raft610-connector.git"
+      }
+    },
+    {
+      "path": "work/fortknox/pci/token-swapper/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/token-swapper.git",
+        "upstream": "https://gitlab.nordstrom.com/tokenize/token-swapper.git"
+      }
+    },
+    {
+      "path": "work/fortknox/pci/token-swapper-client-go/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/tokenize/clients/token-swapper-client-go.git"
+      }
+    },
+    {
+      "path": "work/fortknox/pci/tokenx/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/tokenx.git",
+        "upstream": "https://gitlab.nordstrom.com/tokenize/tokenmanager/tokenx.git"
       }
     },
     {
