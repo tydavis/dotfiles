@@ -42,8 +42,10 @@ case "$OSTYPE" in
     brew list --cask -1 > ~/.setup/list.brewcask
     # fetch the updated brew install script only if new
     curl -fsSL -z ~/.setup/installbrew.sh --output ~/.setup/installbrew.sh https://raw.githubusercontent.com/Homebrew/install/master/install.sh
-    # Git config for work
-    fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookies-work;" ;
+    if [ -d "~/code/work" ]; then 
+        # Git config for work
+        fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookies-work;" ;
+    fi
     if [ "$(command -v code)" ]; then
         code --list-extensions > ~/.setup/code-extensions
     fi
