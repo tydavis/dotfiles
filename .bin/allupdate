@@ -72,6 +72,7 @@ case "$OSTYPE" in
       gitrect;
       # Update our list of git repos
       gitrect -u;
+      gitrect -u -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist;
     fi 
   ;;
 esac

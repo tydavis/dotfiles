@@ -74,6 +74,13 @@
       }
     },
     {
+      "path": "personal/go-agent/",
+      "remotes": {
+        "origin": "https://github.com/tydavis/go-agent.git",
+        "upstream": "https://github.com/newrelic/go-agent.git"
+      }
+    },
+    {
       "path": "personal/gosrc/",
       "remotes": {
         "origin": "https://go.googlesource.com/go"
