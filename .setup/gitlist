@@ -93,6 +93,12 @@
       }
     },
     {
+      "path": "personal/kernel_linux/",
+      "remotes": {
+        "origin": "https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux.git"
+      }
+    },
+    {
       "path": "personal/lawsofengineering/",
       "remotes": {
         "origin": "https://github.com/tydavis/lawsofengineering.git"
