@@ -28,6 +28,7 @@ neovim
 openssl@1.1
 pcre
 pcre2
+pkg-config
 popt
 protobuf
 python@3.9
