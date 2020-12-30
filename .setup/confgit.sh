@@ -10,6 +10,7 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config status.showUntrackedFile
 git config --global user.name "Tyler Davis"
 git config --global user.email tydavis@gmail.com
 git config --global push.default simple
+git config --global init.defaultBranch main
 git config --global credential.https://gitlab.nordstrom.com.username cm0l
 git config --global credential.https://source.developers.google.com.helper "gcloud.sh"
 git config --global url."https://gitlab.nordstrom.com/".insteadOf "git@gitlab.nordstrom.com:"
@@ -19,7 +20,6 @@ git config --global protocol.version 2
 git config --global http.postBuffer 524288000
 git config --global status.submodulesummary 1
 git config --global pull.ff only
-git config --global init.templateDir "~/.config/git/template/"
 git config --global hub.protocol https
 
 if [ "$(command -v delta)" ]; then
