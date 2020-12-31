@@ -290,12 +290,6 @@
       }
     },
     {
-      "path": "work/go-aws-encryption-lib/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/DavisTylerM/go-aws-encryption-lib.git"
-      }
-    },
-    {
       "path": "work/gonordhttp/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/gonordhttp.git"
@@ -365,12 +359,6 @@
       }
     },
     {
-      "path": "work/new-employee-onboarding/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/SRE/new-employee-onboarding.git"
-      }
-    },
-    {
       "path": "work/pathuniq-rs/",
       "remotes": {
         "origin": "https://github.com/tydavis/pathuniq-rs.git"
@@ -397,22 +385,10 @@
       }
     },
     {
-      "path": "work/sntl/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/DavisTylerM/sntl.git"
-      }
-    },
-    {
       "path": "work/standards/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/standards.git",
         "upstream": "https://gitlab.nordstrom.com/engineering-standards/standards.git"
-      }
-    },
-    {
-      "path": "work/store/store-api/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/omni/store-service/store-api.git"
       }
     },
     {
