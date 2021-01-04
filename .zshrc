@@ -124,6 +124,4 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 export PS1="%m [%n:%c]%# "
 
-
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
