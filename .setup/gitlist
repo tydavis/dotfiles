@@ -385,6 +385,12 @@
       }
     },
     {
+      "path": "work/shared-ingress-design/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/taco/design.git"
+      }
+    },
+    {
       "path": "work/standards/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/standards.git",
