@@ -2,6 +2,11 @@
 
 ~/.setup/confgit.sh
 
+if [ "$(command -v gcloud )" ]; then
+  # Update Gcloud
+  gcloud components update -q;
+fi
+
 case "$OSTYPE" in
   darwin*)
     if [[ ! -d "/usr/local/Homebrew" ]] && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
@@ -76,13 +81,13 @@ case "$OSTYPE" in
     fi 
     echo "Updating ABS builds..."
     git -C ~/temp/builds/abspackages pull -q;
+
+    if [ "$(command -v auracle)" ]; then
+        echo "Checking for outdated AUR packages..."
+        auracle outdated;
+    fi
   ;;
 esac
-
-if [ "$(command -v gcloud )" ]; then
-  # Update Gcloud
-  gcloud components update -q;
-fi
 
 echo "" # Newline
 date;
