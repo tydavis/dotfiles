@@ -7,6 +7,10 @@ if [ "$(command -v gcloud )" ]; then
   gcloud components update -q;
 fi
 
+if [ "$(command -v rustup)" ]; then
+    rustup update;
+fi
+
 case "$OSTYPE" in
   darwin*)
     if [[ ! -d "/usr/local/Homebrew" ]] && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
