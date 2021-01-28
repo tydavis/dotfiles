@@ -74,6 +74,8 @@ case "$OSTYPE" in
       gitrect -u;
       gitrect -u -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist;
     fi 
+    echo "Updating ABS builds..."
+    git -C ~/temp/builds/abspackages pull -q;
   ;;
 esac
 
