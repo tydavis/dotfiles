@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+rm ~/.gitconfig # Purge existing gitconf
+
 # Dotfiles config 
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config pull.ff only
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config push.default simple
@@ -25,9 +27,8 @@ git config --global hub.protocol https
 if [ "$(command -v delta)" ]; then
   git config --global core.pager delta
   git config --global interactive.diffFilter "delta --color-only"
+  git config --global delta.line-numbers true
   git config --global delta.side-by-side true
-  git config --global delta.line-numbers-left-format ""
-  git config --global delta.line-numbers-right-format "│ "
   git config --global delta.syntax-theme "Nord"
 fi
 
