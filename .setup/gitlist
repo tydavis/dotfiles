@@ -310,7 +310,6 @@
     {
       "path": "work/load-test-engine/",
       "remotes": {
-        "google": "https://source.developers.google.com/p/fbfk4pa73gppnwiwgfiowr8zyjjbed/r/load-test-engine",
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/gke-user-load-sim.git",
         "upstream": "https://gitlab.nordstrom.com/SRE/public/gke-user-load-sim.git"
       }
