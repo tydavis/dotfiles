@@ -135,6 +135,13 @@
       }
     },
     {
+      "path": "work/aws-okta/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/aws-okta.git",
+        "upstream": "https://gitlab.nordstrom.com/public-cloud/aws-okta.git"
+      }
+    },
+    {
       "path": "work/aws_login_extension/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/SRE/public/aws_login_extension.git"
@@ -315,6 +322,13 @@
       }
     },
     {
+      "path": "work/nerds/api/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/api.git",
+        "upstream": "https://gitlab.nordstrom.com/SRE/public/nerds/api.git"
+      }
+    },
+    {
       "path": "work/nerds/endpoints/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/endpoints.git",
@@ -381,6 +395,12 @@
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/schema-repository.git",
         "upstream": "https://gitlab.nordstrom.com/events/schema-repository.git"
+      }
+    },
+    {
+      "path": "work/session-maker/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/SRE/private/session-maker.git"
       }
     },
     {
