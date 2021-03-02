@@ -29,6 +29,7 @@ intel-ucode
 iotop
 iucode-tool
 jfsutils
+jq
 liburcu
 logrotate
 lvm2
@@ -63,7 +64,6 @@ texlive-publishers
 texlive-science
 ufw
 usbutils
-weechat
 weechat-matrix
 wget
 whois

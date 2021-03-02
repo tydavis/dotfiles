@@ -372,6 +372,13 @@
       }
     },
     {
+      "path": "work/newrelic-aws-linker/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/aws-linker.git",
+        "upstream": "https://gitlab.nordstrom.com/SRE/public/newrelic/aws-linker.git"
+      }
+    },
+    {
       "path": "work/pathuniq-rs/",
       "remotes": {
         "origin": "https://github.com/tydavis/pathuniq-rs.git"
