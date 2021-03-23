@@ -67,10 +67,8 @@ set foldnestmax=1
 filetype plugin on
 syntax on
 
-set termguicolors
-"set background=light
-"colorscheme elflord
-colorscheme torte
+set background=light
+colorscheme solarized
 
 """ Statusline bits
 set statusline=

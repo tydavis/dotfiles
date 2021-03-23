@@ -135,6 +135,18 @@
       }
     },
     {
+      "path": "temp/gostatsd/",
+      "remotes": {
+        "origin": "https://github.com/atlassian/gostatsd.git"
+      }
+    },
+    {
+      "path": "temp/rustlings/",
+      "remotes": {
+        "origin": "https://github.com/rust-lang/rustlings"
+      }
+    },
+    {
       "path": "work/SecurityStandardsV1/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/SecurityStandards/SecurityStandardsV1.git"

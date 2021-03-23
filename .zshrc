@@ -88,9 +88,9 @@ fi
 
 if [ "$(command -v bat)" ]; then
   unalias -m 'cat'
-  alias cat='bat -pp --theme="Nord"'
-  #export BAT_THEME="Solarized (light)"
-  export BAT_THEME="Nord"
+  alias cat='bat -pp'
+  export BAT_THEME="Solarized (light)"
+  #export BAT_THEME="Nord"
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 

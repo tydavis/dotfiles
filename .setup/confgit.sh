@@ -29,7 +29,8 @@ if [ "$(command -v delta)" ]; then
   git config --global interactive.diffFilter "delta --color-only"
   git config --global delta.line-numbers true
   git config --global delta.side-by-side true
-  git config --global delta.syntax-theme "Nord"
+  #git config --global delta.syntax-theme "Nord"
+  git config --global delta.syntax-theme "Solarized (light)"
 fi
 
 case `uname` in
