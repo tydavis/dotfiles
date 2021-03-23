@@ -11,6 +11,7 @@ cpanminus
 devtools
 dmidecode
 docker-compose
+dwarffortress
 exa
 fd
 fzf
@@ -69,6 +70,7 @@ wget
 whois
 xdelta3
 xfsdump
+xorg-server-xvfb
 xorg-xprop
 youtube-dl
 znc

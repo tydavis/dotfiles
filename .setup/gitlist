@@ -93,6 +93,12 @@
       }
     },
     {
+      "path": "personal/lab/",
+      "remotes": {
+        "origin": "https://github.com/zaquestion/lab.git"
+      }
+    },
+    {
       "path": "personal/lawsofengineering/",
       "remotes": {
         "origin": "https://github.com/tydavis/lawsofengineering.git"
@@ -171,6 +177,13 @@
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/container-image-composer.git",
         "upstream": "https://gitlab.nordstrom.com/CICD/container-image-composer.git"
+      }
+    },
+    {
+      "path": "work/container-image-composer-v2/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/DavisTylerM/container-image-composer-v2.git",
+        "upstream": "https://gitlab.nordstrom.com/CICD/container-image-composer-v2.git"
       }
     },
     {
@@ -300,6 +313,12 @@
       "path": "work/gonordhttp/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/gonordhttp.git"
+      }
+    },
+    {
+      "path": "work/infoblox-tools/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/SRE/public/infoblox-tools.git"
       }
     },
     {

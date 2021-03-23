@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'jremmen/vim-ripgrep'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'stefandtw/quickfix-reflector.vim'
-Plug 'rakr/vim-one'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'buoto/gotests-vim'
 Plug 'rust-lang/rust.vim'
@@ -68,10 +67,10 @@ set foldnestmax=1
 filetype plugin on
 syntax on
 
-"set termguicolors
+set termguicolors
 "set background=light
-"colorscheme peachpuff
-colorscheme one
+"colorscheme elflord
+colorscheme torte
 
 """ Statusline bits
 set statusline=
