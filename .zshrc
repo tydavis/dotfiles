@@ -17,7 +17,7 @@ case "$OSTYPE" in
     if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
     # iTerm integration
-    test -e /Users/tydavis/.iterm2_shell_integration.zsh && source /Users/tydavis/.iterm2_shell_integration.zsh || true
+    #test -e /Users/tydavis/.iterm2_shell_integration.zsh && source /Users/tydavis/.iterm2_shell_integration.zsh || true
     # Unlock Keychain
     alias unlock='security unlock-keychain ~/Library/Keychains/login.keychain'
     #
@@ -31,7 +31,7 @@ case "$OSTYPE" in
     alias psc='ps xawf -eo pid,user,cgroup,args'
     alias vim='nvim'
     alias gdb='gdb -tui'
-        
+
     export GOPATH=/home/tydavis/go
     export PATH=$PATH:$HOME/.cargo/bin:/usr/local/go/bin:/home/tydavis/go/bin:/home/tydavis/.bin:/home/tydavis/.local/bin
 
@@ -42,7 +42,7 @@ case "$OSTYPE" in
         eval "$(hub alias -s)"
     fi
 
-    
+
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
     `eval $HOME/.bin/pathuniq-rs`
@@ -65,7 +65,7 @@ unsetopt autocd beep extendedglob
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-# ZSH VIM MODE 
+# ZSH VIM MODE
 export KEYTIMEOUT=1
 ###
 
@@ -76,8 +76,6 @@ export GO111MODULE=on
 
 alias less='less -FX'
 alias ls='/bin/ls -F'
-
-
 
 if [ "$(command -v exa)" ]; then
     unalias -m 'll'

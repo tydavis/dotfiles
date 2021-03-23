@@ -25,8 +25,10 @@ libvterm
 libyaml
 luajit
 luajit-openresty
+luv
 lz4
 mosh
+mpdecimal
 msgpack
 ncdu
 ncurses
