@@ -3,6 +3,7 @@ bfg
 browsh-bin
 git-delta-bin
 haskell-base-noprelude
+haskell-haddock-library1.9
 img
 js60
 pandoc-citeproc

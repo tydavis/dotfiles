@@ -77,7 +77,9 @@
     {
       "path": "personal/gosrc/",
       "remotes": {
-        "origin": "https://go.googlesource.com/go"
+        "google": "https://go.googlesource.com/go",
+        "origin": "https://github.com/tydavis/go.git",
+        "upstream": "https://github.com/golang/go.git"
       }
     },
     {
@@ -144,6 +146,12 @@
       "path": "temp/rustlings/",
       "remotes": {
         "origin": "https://github.com/rust-lang/rustlings"
+      }
+    },
+    {
+      "path": "temp/tools/",
+      "remotes": {
+        "origin": "https://github.com/golang/tools.git"
       }
     },
     {
@@ -433,6 +441,12 @@
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/schema-repository.git",
         "upstream": "https://gitlab.nordstrom.com/events/schema-repository.git"
+      }
+    },
+    {
+      "path": "work/secure-creds-maker/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/SRE/public/newrelic/secure-creds-maker.git"
       }
     },
     {
