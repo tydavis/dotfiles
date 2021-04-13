@@ -60,9 +60,9 @@ set wildmode=list:longest,full
 set visualbell
 
 "Code folding
-set foldmethod=syntax 
+set foldmethod=syntax
 set foldlevel=1
-set foldnestmax=1 
+set foldnestmax=1
 
 filetype plugin on
 syntax on
@@ -94,6 +94,7 @@ let g:LanguageClient_serverCommands = {
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+let g:go_gopls_gofumpt=1
 
 " format with goimports instead of gofmt
 let g:go_fmt_command = "goimports" " Goimports is slow with modules, when module not found
@@ -130,7 +131,7 @@ au FileType go nmap <Leader>k <Plug>(go-doc)
 
 """ END GOLANG
 
-""""" Bugfixes and oddities below 
+""""" Bugfixes and oddities below
 " Fix weird JSON quotation issue
 let g:vim_json_syntax_conceal = 0
 
@@ -174,7 +175,7 @@ noremap <leader>n :set invnumber<CR>
 " Enable Ripgrep formatting for vim
 let g:rg_command = 'rg --vimgrep -S'
 
-""" BEGIN CPP 
+""" BEGIN CPP
 map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
 
 function! Formatonsave()
