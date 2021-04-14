@@ -69,7 +69,7 @@ set foldnestmax=1
 filetype plugin on
 syntax on
 
-let g:gruvbox_termcolors=16
+"let g:gruvbox_termcolors=16
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 colorscheme gruvbox
@@ -204,3 +204,13 @@ if executable('clangd')
 endif
 
 """ END CPP
+
+""" ToggleBackground
+function! Switch_background()
+    if &background == "light"
+        set background=dark
+    else
+        set background=light
+    endif
+endfunction
+noremap <leader>l :call Switch_background()<CR>

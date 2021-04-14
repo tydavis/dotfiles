@@ -46,6 +46,7 @@ netctl
 nftables
 nmap
 openssl-1.0
+postgresql
 reiserfsprogs
 ropgadget
 ropper
