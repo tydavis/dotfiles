@@ -17,6 +17,7 @@ go
 google-chrome
 google-cloud-sdk
 hub
+iterm2
 kubernetes-cli
 libssh2
 libtermkey

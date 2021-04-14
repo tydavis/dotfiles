@@ -11,10 +11,11 @@ Plug 'morhetz/gruvbox'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'autozimu/LanguageClient-neovim', {
+  Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
@@ -68,8 +69,10 @@ set foldnestmax=1
 filetype plugin on
 syntax on
 
-set background=light
-colorscheme solarized
+let g:gruvbox_termcolors=16
+let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_contrast_light="hard"
+colorscheme gruvbox
 
 """ Statusline bits
 set statusline=
@@ -97,8 +100,8 @@ let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:go_gopls_gofumpt=1
 
-" format with goimports instead of gofmt
-let g:go_fmt_command = "goimports" " Goimports is slow with modules, when module not found
+let g:go_fmt_command="gopls"
+"let g:go_fmt_command = "goimports" " Goimports is slow with modules, when module not found
 
 " By default syntax-highlighting for Functions, Methods and Structs is disabled
 let g:go_highlight_build_constraints = 1
