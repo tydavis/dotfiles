@@ -7,6 +7,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'buoto/gotests-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'w0rp/ale'
+Plug 'morhetz/gruvbox'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
