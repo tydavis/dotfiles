@@ -234,6 +234,12 @@
       }
     },
     {
+      "path": "work/eta_service/",
+      "remotes": {
+        "origin": "https://gitlab.nordstrom.com/CustomerPromise/eta.git"
+      }
+    },
+    {
       "path": "work/events-sdk-golang/",
       "remotes": {
         "origin": "https://gitlab.nordstrom.com/DavisTylerM/events-sdk-golang.git",

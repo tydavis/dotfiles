@@ -99,6 +99,7 @@ let g:LanguageClient_serverCommands = {
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:go_gopls_gofumpt=1
+let g:go_metalinter_command = 'golangci-lint'
 
 let g:go_fmt_command="gopls"
 "let g:go_fmt_command = "goimports" " Goimports is slow with modules, when module not found
