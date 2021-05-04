@@ -2,7 +2,7 @@
 
 # == Code Below ==
 
-if [[ ! -d "/usr/local/Homebrew" ]] && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
+if ([[ ! -d "/opt/homebrew" ]]) && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
     # Install xcode cli components
     xcode-select --install
     # Install brew
@@ -27,7 +27,7 @@ rm $brewtemp
 
 # Install new cask packages
 casktemp=$(mktemp /tmp/upbrewcask.XXXX)
-brew cask list -1 > $casktemp
-comm -13 $casktemp ~/.setup/list.brewcask | while read -r b; do brew cask install $b ; done
+brew list -1 --cask > $casktemp
+comm -13 $casktemp ~/.setup/list.brewcask | while read -r b; do brew install --cask $b ; done
 rm $casktemp
 

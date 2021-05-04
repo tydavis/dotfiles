@@ -12,10 +12,11 @@ case "$OSTYPE" in
     zstyle ':completion:*' completer _complete _ignored
     zstyle :compinstall filename '/Users/tydavis/.zshrc'
     # == OSX Settings ==
-    export PATH=/usr/local/bin:$PATH:$HOME/.bin:$HOME/.cargo/bin:/usr/local/opt/openjdk/bin:/usr/local/go/bin:/Users/tydavis/go/bin
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    export PATH=/opt/homebrew/bin:$PATH:$HOME/.bin:$HOME/.cargo/bin:/Users/tydavis/go/bin
     export AWS_SDK_LOAD_CONFIG=1
-    if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'; fi
-    if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
+    if [ -f '/Users/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
+    if [ -f '/Users/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
     # iTerm integration
     #test -e /Users/tydavis/.iterm2_shell_integration.zsh && source /Users/tydavis/.iterm2_shell_integration.zsh || true
     # Unlock Keychain
@@ -43,8 +44,6 @@ case "$OSTYPE" in
     fi
 
 
-    if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi
-    if [ -f '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/completion.zsh.inc'; fi
     `eval $HOME/.bin/pathuniq-rs`
   ;;
   dragonfly*|freebsd*|netbsd*|openbsd*)

@@ -13,7 +13,7 @@ fi
 
 case "$OSTYPE" in
   darwin*)
-    if [[ ! -d "/usr/local/Homebrew" ]] && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
+    if [[ ! -d "/opt/homebrew" ]] && [[ -f "/private/etc/bashrc_Apple_Terminal" ]]; then
       # Install xcode cli components
       xcode-select --install
       # Install brew using checked-in copy of https://raw.githubusercontent.com/Homebrew/install/master/install
@@ -82,6 +82,12 @@ case "$OSTYPE" in
       # Update our list of git repos
       gitrect -u;
       gitrect -u -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist;
+    else
+      if [ "$(command -v go)" ]; then
+        go get -u github.com/tydavis/cmd/gitrect;
+      else
+          sudo pacman -S go --noconfirm
+      fi
     fi 
     echo "Updating ABS builds..."
     git -C ~/temp/builds/abspackages pull -q;
