@@ -137,9 +137,9 @@
       }
     },
     {
-      "path": "temp/gostatsd/",
+      "path": "temp/awesomeProject/",
       "remotes": {
-        "origin": "https://github.com/atlassian/gostatsd.git"
+        "origin": "https://gitlab.nordstrom.com/Yug.Shende/awesomeProject.git"
       }
     },
     {

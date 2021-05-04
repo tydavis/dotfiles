@@ -53,7 +53,9 @@ case "$OSTYPE" in
     curl -fsSL -z ~/.setup/installbrew.sh --output ~/.setup/installbrew.sh https://raw.githubusercontent.com/Homebrew/install/master/install.sh
     if [ -d "~/code/work" ]; then 
         # Git config for work
-        fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookies-work;" ;
+        if [ "$(command -v fd)" ]; then
+            fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookies-work;" ;
+        fi
     fi
     if [ "$(command -v code)" ]; then
         code --list-extensions > ~/.setup/code-extensions
@@ -69,11 +71,15 @@ case "$OSTYPE" in
     # AUR installed / local-installed packages
     pacman -Qmq > ~/.setup/pacaur
     # Git config for work
-    fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookies-work;" ;
     if [ "$(command -v fetchgit)" ]; then
-      # Update all existing repos
-      fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
-      fd -H -t d '.git$' ~/.vim -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+        # Update all existing repos
+        if [ "$(command -v fd)" ]; then
+            fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookies-work;" ;
+            fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+            fd -H -t d '.git$' ~/.vim -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
+        else 
+
+        fi
     fi
     if [ "$(command -v gitrect)" ]; then
       # Synchronize work repo updates

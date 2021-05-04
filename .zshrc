@@ -76,6 +76,10 @@ export GO111MODULE=on
 alias less='less -FX'
 alias ls='/bin/ls -F'
 
+#if [ "$(command -v docker)" ]; then
+# alias dsha="docker inspect --format='{{index .RepoDigests 0}}'"
+#fi
+
 if [ "$(command -v exa)" ]; then
     unalias -m 'll'
     unalias -m 'l'
