@@ -119,6 +119,13 @@
       }
     },
     {
+      "path": "personal/terraform/",
+      "remotes": {
+        "origin": "https://github.com/tydavis/terraform.git",
+        "upstream": "https://github.com/hashicorp/terraform.git"
+      }
+    },
+    {
       "path": "personal/tydavis/",
       "remotes": {
         "origin": "https://github.com/tydavis/tydavis.git"
