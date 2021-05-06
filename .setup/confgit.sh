@@ -31,7 +31,7 @@ if [ "$(command -v delta)" ]; then
   # git config --global delta.side-by-side true
   git config --global delta.side-by-side false
   # git config --global delta.syntax-theme "Solarized (light)"
-  # git config --global delta.syntax-theme "gruvbox-dark"
+  git config --global delta.syntax-theme "gruvbox-dark"
 fi
 
 case `uname` in
