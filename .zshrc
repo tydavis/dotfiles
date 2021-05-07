@@ -22,7 +22,8 @@ case "$OSTYPE" in
     # Unlock Keychain
     alias unlock='security unlock-keychain ~/Library/Keychains/login.keychain'
     #
-    `eval $HOME/.bin/pathuniq-rs`
+    export PATH=/Users/tydavis/.bin/google-cloud-sdk/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Little\ Snitch.app/Contents/Components:/Library/Apple/usr/bin:/Users/tydavis/.cargo/bin:/Users/tydavis/.bin:/Users/tydavis/go/bin
+
   ;;
   linux*)
     # ZSH Settings
