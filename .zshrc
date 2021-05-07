@@ -31,7 +31,7 @@ case "$OSTYPE" in
     zstyle :compinstall filename '/home/tydavis/.zshrc'
     # == Archlinux (?) settings
     alias psc='ps xawf -eo pid,user,cgroup,args'
-    alias vim='nvim'
+    #alias vim='nvim'
     alias gdb='gdb -tui'
 
     if [ -f '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/tydavis/.bin/google-cloud-sdk/path.zsh.inc'; fi

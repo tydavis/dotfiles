@@ -83,6 +83,13 @@
       }
     },
     {
+      "path": "personal/gruvbox-contrib/",
+      "remotes": {
+        "origin": "https://github.com/tydavis/gruvbox-contrib.git",
+        "upstream": "https://github.com/gruvbox-community/gruvbox-contrib.git"
+      }
+    },
+    {
       "path": "personal/journal/",
       "remotes": {
         "origin": "https://github.com/tydavis/journal.git"
