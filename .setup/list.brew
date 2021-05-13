@@ -11,12 +11,19 @@ gnu-sed
 go
 kubernetes-cli
 libssh2
+libtermkey
+libuv
+libvterm
 libyaml
+luajit-openresty
+luv
 lz4
 mosh
 mpdecimal
+msgpack
 ncdu
 ncurses
+neovim
 openssl@1.1
 pcre
 pcre2
@@ -31,6 +38,7 @@ ruby
 rustup-init
 sphinx-doc
 sqlite
+unibilium
 watch
 xxhash
 xz
