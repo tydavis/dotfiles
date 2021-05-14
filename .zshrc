@@ -72,16 +72,19 @@ export KEYTIMEOUT=1
 ###
 
 # == Universal Configs ==
-export EDITOR="nvim"
-export VISUAL="nvim"
-export GO111MODULE=on
+if [ "$(command -v nvim)" ]; then
+    export EDITOR="nvim"
+    export VISUAL="nvim"
+    alias vim="nvim"
+else 
+    export EDITOR="vim"
+    export VISUAL="vim"
+    alias nvim="vim"
+fi
 
+export GO111MODULE=on
 alias less='less -FX'
 alias ls='/bin/ls -F'
-
-#if [ "$(command -v docker)" ]; then
-# alias dsha="docker inspect --format='{{index .RepoDigests 0}}'"
-#fi
 
 if [ "$(command -v exa)" ]; then
     unalias -m 'll'
@@ -95,7 +98,8 @@ fi
 if [ "$(command -v bat)" ]; then
   unalias -m 'cat'
   alias cat='bat -pp'
-  export BAT_THEME="Solarized (light)"
+  export BAT_THEME="gruvbox-dark"
+  #export BAT_THEME="Solarized (light)"
   #export BAT_THEME="Nord"
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
@@ -114,7 +118,6 @@ else
     alias upcode="find ~/code -name \".git\" |xargs -n1 -I{} bash -c ' cd {}/..; ~/.bin/fetchgit; ' "
 fi
 
-
 # To load files
 # git clone --bare https://github.com/tydavis/dotfiles.git $HOME/.dotfiles
 
@@ -122,9 +125,6 @@ fi
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # Ignore files that aren't relevant
 # dotfiles config --local status.showUntrackedFiles no
-
-## Swagger command for go-swagger (https://goswagger.io/install.html)
-#alias swagger="docker run --rm -it -e GOPATH=$HOME/go:/go -v $HOME:$HOME -w $(pwd) quay.io/goswagger/swagger"
 
 export PS1="%m [%n:%c]%# "
 
