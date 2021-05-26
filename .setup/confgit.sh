@@ -30,8 +30,6 @@ git config --global hub.protocol https
 #   git config --global delta.line-numbers true
 #   # git config --global delta.side-by-side true
 #   git config --global delta.side-by-side false
-#   # git config --global delta.syntax-theme "Solarized (light)"
-#   git config --global delta.syntax-theme "gruvbox-dark"
 # fi
 
 case `uname` in

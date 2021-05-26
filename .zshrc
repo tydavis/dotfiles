@@ -1,5 +1,3 @@
-# Created by newuser for 5.7.1
-
 # The following lines were added by compinstall
 #
 #zstyle ':completion:*' completer _complete _ignored
@@ -76,7 +74,7 @@ if [ "$(command -v nvim)" ]; then
     export EDITOR="nvim"
     export VISUAL="nvim"
     alias vim="nvim"
-else 
+else
     export EDITOR="vim"
     export VISUAL="vim"
     alias nvim="vim"
@@ -98,9 +96,6 @@ fi
 if [ "$(command -v bat)" ]; then
   unalias -m 'cat'
   alias cat='bat -pp'
-  export BAT_THEME="gruvbox-dark"
-  #export BAT_THEME="Solarized (light)"
-  #export BAT_THEME="Nord"
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 

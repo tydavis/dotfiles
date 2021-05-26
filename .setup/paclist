@@ -47,6 +47,7 @@ nftables
 nmap
 openssl-1.0
 postgresql
+python2-pygments
 reiserfsprogs
 ropgadget
 ropper
