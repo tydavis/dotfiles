@@ -18,6 +18,7 @@ libyaml
 luajit-openresty
 luv
 lz4
+lzo
 mosh
 mpdecimal
 msgpack
@@ -36,6 +37,7 @@ ripgrep
 rsync
 ruby
 rustup-init
+six
 sphinx-doc
 sqlite
 unibilium
