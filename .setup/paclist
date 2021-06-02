@@ -1,7 +1,6 @@
 base
 base-devel
 aria2
-aws-cli
 base
 bat
 bazel
@@ -32,7 +31,6 @@ iucode-tool
 jfsutils
 jq
 liburcu
-logrotate
 lvm2
 man-db
 man-pages
@@ -46,6 +44,7 @@ netctl
 nftables
 nmap
 openssl-1.0
+pacutils
 postgresql
 python2-pygments
 reiserfsprogs

@@ -72,11 +72,9 @@ set foldnestmax=1
 filetype plugin on
 syntax on
 
-let g:gruvbox_termcolors=16 "Forces gruvbox to use Terminal theme, which enables auto-light/dark on OSX
-let g:gruvbox_contrast_dark="hard"
-let g:gruvbox_contrast_light="hard"
-set background=dark
-colorscheme gruvbox
+" Light Theme
+set background=light
+colorscheme peachpuff
 
 """ Statusline bits
 set statusline=
