@@ -100,6 +100,10 @@ if [ "$(command -v bat)" ]; then
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 
+if [ "$(command -v procs)" ]; then
+    alias procs='sudo procs --theme light'
+fi
+
 if [ "$(command -v zstd)" ]; then
     alias zstd='zstd -T0'
 fi
