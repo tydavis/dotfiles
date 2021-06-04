@@ -1,1 +1,1 @@
-/home/tydavis/.vimrc
+../../.vimrc
