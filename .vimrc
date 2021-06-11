@@ -91,9 +91,13 @@ set statusline+=%0*\ %m%r%w\                             "Modified? Readonly? To
 " Required for operations modifying multiple buffers like rename.
 set hidden
 
+" Rust
+let g:rustfmt_autosave = 1
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ }
+let g:ale_linters = {'rust': ['analyzer']}
+
 
 """ BEGIN GOLANG
 
@@ -162,8 +166,6 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.rss setfiletype xml
 endif
 
-" Rust
-let g:rustfmt_autosave = 1
 
 " Disable mouse automatic mode
 set mouse-=a

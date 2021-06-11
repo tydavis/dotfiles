@@ -51,7 +51,7 @@ python2-pygments
 reiserfsprogs
 ropgadget
 ropper
-rustup
+rust-analyzer
 s-nail
 speedtest-cli
 sysstat

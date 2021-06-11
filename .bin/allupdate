@@ -26,8 +26,6 @@ case "$OSTYPE" in
       brew tap git-chglog/git-chglog;
       # Tap fonts
       brew tap homebrew/cask-fonts
-      # Gitlab kubelogin tap
-      brew tap incubator/kubelogin https://gitlab.nordstrom.com/k8s/incubator/homebrew-kubelogin.git;
     fi
 
     # Install new brew packages
@@ -82,12 +80,9 @@ case "$OSTYPE" in
         fi
     fi
     if [ "$(command -v gitrect)" ]; then
-      # Synchronize work repo updates
-      gitrect -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist
       gitrect;
       # Update our list of git repos
       gitrect -u;
-      gitrect -u -d ~/code/work -c ~/code/work/dotfiles/.setup/gitlist;
     else
       if [ "$(command -v go)" ]; then
         go get -u github.com/tydavis/cmd/gitrect;
