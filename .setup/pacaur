@@ -8,5 +8,6 @@ haskell-haddock-library1.9
 img
 js60
 pandoc-citeproc
+python2-pygments
 urlview
 visual-studio-code-bin

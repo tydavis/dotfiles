@@ -72,7 +72,7 @@ case "$OSTYPE" in
     if [ "$(command -v fetchgit)" ]; then
         # Update all existing repos
         if [ "$(command -v fd)" ]; then
-            fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookies-work;" ;
+            #fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookies-work;" ;
             fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
             fd -H -t d '.git$' ~/.vim -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
         else 
@@ -85,7 +85,7 @@ case "$OSTYPE" in
       gitrect -u;
     else
       if [ "$(command -v go)" ]; then
-        go get -u github.com/tydavis/cmd/gitrect;
+        go get -u github.com/tydavis/utilities/cmd/gitrect ;
       else
           sudo pacman -S go --noconfirm
       fi

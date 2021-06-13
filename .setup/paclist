@@ -47,7 +47,6 @@ openssl-1.0
 pacutils
 postgresql
 procs
-python2-pygments
 reiserfsprogs
 ropgadget
 ropper

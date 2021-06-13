@@ -151,12 +151,6 @@
       }
     },
     {
-      "path": "temp/awesomeProject/",
-      "remotes": {
-        "origin": "https://gitlab.nordstrom.com/Yug.Shende/awesomeProject.git"
-      }
-    },
-    {
       "path": "temp/rustlings/",
       "remotes": {
         "origin": "https://github.com/rust-lang/rustlings"
