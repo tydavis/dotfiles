@@ -63,16 +63,16 @@
     {
       "path": "personal/exercism-cli/",
       "remotes": {
-        "origin": "https://github.com/tydavis/cli.git",
-        "upstream": "https://github.com/exercism/cli.git"
+        "origin": "https://github.com/exercism/cli.git",
+        "tydavis": "https://github.com/tydavis/cli.git"
       }
     },
     {
       "path": "personal/gosrc/",
       "remotes": {
         "google": "https://go.googlesource.com/go",
-        "origin": "https://github.com/tydavis/go.git",
-        "upstream": "https://github.com/golang/go.git"
+        "origin": "https://github.com/golang/go.git",
+        "tydavis": "https://github.com/tydavis/go.git"
       }
     },
     {
@@ -114,8 +114,8 @@
     {
       "path": "personal/terraform/",
       "remotes": {
-        "origin": "https://github.com/tydavis/terraform.git",
-        "upstream": "https://github.com/hashicorp/terraform.git"
+        "origin": "https://github.com/hashicorp/terraform.git",
+        "tydavis": "https://github.com/tydavis/terraform.git"
       }
     },
     {
@@ -127,8 +127,8 @@
     {
       "path": "personal/ultimate_rust_crash_course/",
       "remotes": {
-        "origin": "https://github.com/tydavis/ultimate_rust_crash_course.git",
-        "upstream": "https://github.com/CleanCut/ultimate_rust_crash_course.git"
+        "origin": "https://github.com/CleanCut/ultimate_rust_crash_course.git",
+        "tydavis": "https://github.com/tydavis/ultimate_rust_crash_course.git"
       }
     },
     {
