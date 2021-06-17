@@ -17,7 +17,7 @@ elif [[ `git branch --list main` ]]; then
     git pull --ff-only upstream main;
     git push origin;
   elif git config remote.upstream.tydavis > /dev/null; then
-    git pull --ff-only origin master;
+    git pull --ff-only origin main;
     git push tydavis;
   else
     git pull --ff-only origin main;
@@ -37,7 +37,7 @@ else # Need more references here
     git pull --ff-only upstream main;
     git push origin;
   elif git config remote.upstream.tydavis > /dev/null; then
-    git pull --ff-only origin master;
+    git pull --ff-only origin main;
     git push tydavis;
   else
     git pull --ff-only origin main;
