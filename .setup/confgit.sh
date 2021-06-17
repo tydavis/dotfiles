@@ -23,7 +23,6 @@ git config --global protocol.version 2
 git config --global pull.ff only
 git config --global push.default simple
 git config --global push.followTags true
-git config --global push.negotiate true
 git config --global status.submodulesummary 1
 git config --global url."https://gitlab.nordstrom.com/".insteadOf "git@gitlab.nordstrom.com:"
 git config --global user.email tydavis@gmail.com
