@@ -14,7 +14,7 @@ git config --global credential.https://gitlab.nordstrom.com.username cm0l
 git config --global credential.https://source.developers.google.com.helper "gcloud.sh"
 git config --global fetch.parallel 4
 git config --global fetch.writeCommitGraphs true
-git config --global http.postBuffer 524288000
+#git config --global http.postBuffer 524288000
 git config --global hub.protocol https
 git config --global init.defaultBranch main
 git config --global pack.threads 0 # Auto-detect threads from CPU

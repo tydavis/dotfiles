@@ -91,7 +91,7 @@ case "$OSTYPE" in
       fi
     fi 
     echo "Updating ABS builds..."
-    git -C ~/temp/builds/abspackages pull -q;
+    asp update
 
     if [ "$(command -v auracle)" ]; then
         echo "Checking for outdated AUR packages..."
