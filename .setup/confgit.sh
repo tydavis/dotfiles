@@ -10,11 +10,9 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config status.showUntrackedFile
 
 # Main Git Config
 git config --global core.commitGraph true
-git config --global credential.https://gitlab.nordstrom.com.username cm0l
 git config --global credential.https://source.developers.google.com.helper "gcloud.sh"
 git config --global fetch.parallel 4
 git config --global fetch.writeCommitGraphs true
-#git config --global http.postBuffer 524288000
 git config --global hub.protocol https
 git config --global init.defaultBranch main
 git config --global pack.threads 0 # Auto-detect threads from CPU
@@ -24,7 +22,6 @@ git config --global pull.ff only
 git config --global push.default simple
 git config --global push.followTags true
 git config --global status.submodulesummary 1
-git config --global url."https://gitlab.nordstrom.com/".insteadOf "git@gitlab.nordstrom.com:"
 git config --global user.email tydavis@gmail.com
 git config --global user.name "Tyler Davis"
 

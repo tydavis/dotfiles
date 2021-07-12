@@ -1,6 +1,7 @@
 base
 base-devel
 aria2
+asp
 base
 bat
 bazel
@@ -29,7 +30,6 @@ intel-ucode
 iotop
 iucode-tool
 jfsutils
-jq
 liburcu
 lvm2
 man-db

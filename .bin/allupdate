@@ -49,10 +49,10 @@ case "$OSTYPE" in
     brew list --cask -1 > ~/.setup/list.brewcask
     # fetch the updated brew install script only if new
     curl -fsSL -z ~/.setup/installbrew.sh --output ~/.setup/installbrew.sh https://raw.githubusercontent.com/Homebrew/install/master/install.sh
-    if [ -d "~/code/work" ]; then 
+    if [ -d "~/code/work" ]; then
         # Git config for work
         if [ "$(command -v fd)" ]; then
-            fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /Users/tydavis/.gitcookies-work;" ;
+            fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tdavis@hpe.com; git config http.cookiefile /Users/tydavis/.gitcookies-work;" ;
         fi
     fi
     if [ "$(command -v code)" ]; then
@@ -72,10 +72,10 @@ case "$OSTYPE" in
     if [ "$(command -v fetchgit)" ]; then
         # Update all existing repos
         if [ "$(command -v fd)" ]; then
-            #fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tyler.m.davis@nordstrom.com; git config http.cookiefile /home/tydavis/.gitcookies-work;" ;
+            fd -H -t d -E mod -E vendor '.git$' ~/code/work -x bash -c "cd {//}; git config user.email tdavis@hpe.com; git config http.cookiefile /home/tydavis/.gitcookies-work;" ;
             fd -H -t d -E mod -E vendor '.git$' ~/code -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
             fd -H -t d '.git$' ~/.vim -x bash -c "cd {//}; ~/.bin/fetchgit;" ;
-        else 
+        else
 
         fi
     fi
@@ -89,7 +89,7 @@ case "$OSTYPE" in
       else
           sudo pacman -S go --noconfirm
       fi
-    fi 
+    fi
     echo "Updating ABS builds..."
     asp update
 

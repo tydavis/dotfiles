@@ -154,6 +154,25 @@
       "remotes": {
         "origin": "https://github.com/golang/tools.git"
       }
+    },
+    {
+      "path": "work/README/",
+      "remotes": {
+        "origin": "https://github.com/hpe-hcss/README.git",
+        "tydavis": "https://github.com/tydavis/README.git"
+      }
+    },
+    {
+      "path": "work/foundation/",
+      "remotes": {
+        "origin": "https://github.com/hpe-hcss/foundation.git"
+      }
+    },
+    {
+      "path": "work/sre-service-catalog/",
+      "remotes": {
+        "origin": "https://github.com/hpe-hcss/sre-service-catalog.git"
+      }
     }
   ]
 }
